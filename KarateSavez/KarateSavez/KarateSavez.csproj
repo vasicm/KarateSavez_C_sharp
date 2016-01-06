@@ -46,16 +46,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditovanjeTakmicara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditovanjeTakmicara.Designer.cs">
+      <DependentUpon>EditovanjeTakmicara.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrikazTakmicara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazTakmicara.Designer.cs">
+      <DependentUpon>PrikazTakmicara.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Takmicenja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Takmicenja.Designer.cs">
+      <DependentUpon>Takmicenja.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EditovanjeTakmicara.resx">
+      <DependentUpon>EditovanjeTakmicara.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazTakmicara.resx">
+      <DependentUpon>PrikazTakmicara.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,7 +89,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Takmicenja.resx">
+      <DependentUpon>Takmicenja.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,11 +108,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icons\copy.png" />
+    <Content Include="icons\cut.png" />
+    <Content Include="icons\Desert.jpg" />
+    <Content Include="icons\Font.png" />
+    <Content Include="icons\help.png" />
+    <Content Include="icons\help_24.png" />
     <Content Include="icons\manager.png" />
     <Content Include="icons\globe.png" />
     <Content Include="icons\finder.png" />
     <Content Include="icons\home.png" />
+    <Content Include="icons\new.png" />
+    <Content Include="icons\open.png" />
+    <Content Include="icons\paste.png" />
+    <Content Include="icons\redo.png" />
+    <Content Include="icons\reload.png" />
+    <Content Include="icons\save.png" />
+    <Content Include="icons\search.png" />
     <Content Include="icons\shutdown.png" />
+    <Content Include="icons\undo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

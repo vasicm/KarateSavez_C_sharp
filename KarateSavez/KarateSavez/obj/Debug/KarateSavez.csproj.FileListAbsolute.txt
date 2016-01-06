@@ -7,3 +7,6 @@ C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\Kar
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.csproj.GenerateResource.Cache
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.exe
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.pdb
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.Takmicenja.resources
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.EditovanjeTakmicara.resources
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.PrikazTakmicara.resources

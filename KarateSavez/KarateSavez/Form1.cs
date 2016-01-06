@@ -21,5 +21,25 @@ namespace KarateSavez
         {
 
         }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void оПрограмуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void такмичењаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
