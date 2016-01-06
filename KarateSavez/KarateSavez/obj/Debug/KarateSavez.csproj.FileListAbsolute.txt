@@ -1,1 +1,9 @@
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\bin\Debug\KarateSavez.exe.config
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\bin\Debug\KarateSavez.exe
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\bin\Debug\KarateSavez.pdb
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.csprojResolveAssemblyReference.cache
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.Form1.resources
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.Properties.Resources.resources
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.csproj.GenerateResource.Cache
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.exe
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.pdb
