@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
+using KarateSavez.dao;
+using KarateSavez.dto;
 
 namespace KarateSavez
 {
@@ -16,7 +19,7 @@ namespace KarateSavez
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new pocetnaForma());
         }
     }
 }

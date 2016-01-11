@@ -2,7 +2,6 @@ C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\Kar
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\bin\Debug\KarateSavez.exe
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\bin\Debug\KarateSavez.pdb
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.csprojResolveAssemblyReference.cache
-C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.Form1.resources
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.Properties.Resources.resources
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.csproj.GenerateResource.Cache
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.exe
@@ -10,3 +9,5 @@ C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\Kar
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.Takmicenja.resources
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.EditovanjeTakmicara.resources
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.PrikazTakmicara.resources
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\bin\Debug\MySql.Data.dll
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.pocetnaForma.resources

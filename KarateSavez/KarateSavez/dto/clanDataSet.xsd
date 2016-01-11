@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="clanDataSet" targetNamespace="http://tempuri.org/clanDataSet.xsd" xmlns:mstns="http://tempuri.org/clanDataSet.xsd" xmlns="http://tempuri.org/clanDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="clanDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="clanDataSet" msprop:Generator_UserDSName="clanDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="clan" msprop:Generator_TableClassName="clanDataTable" msprop:Generator_TableVarName="tableclan" msprop:Generator_TablePropName="clan" msprop:Generator_RowDeletingName="clanRowDeleting" msprop:Generator_RowChangingName="clanRowChanging" msprop:Generator_RowEvHandlerName="clanRowChangeEventHandler" msprop:Generator_RowDeletedName="clanRowDeleted" msprop:Generator_UserTableName="clan" msprop:Generator_RowChangedName="clanRowChanged" msprop:Generator_RowEvArgName="clanRowChangeEvent" msprop:Generator_RowClassName="clanRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="jmb" msprop:Generator_ColumnVarNameInTable="columnjmb" msprop:Generator_ColumnPropNameInRow="jmb" msprop:Generator_ColumnPropNameInTable="jmbColumn" msprop:Generator_UserColumnName="jmb" type="xs:string" />
+              <xs:element name="Ime" msprop:Generator_ColumnVarNameInTable="columnIme" msprop:Generator_ColumnPropNameInRow="Ime" msprop:Generator_ColumnPropNameInTable="ImeColumn" msprop:Generator_UserColumnName="Ime" type="xs:string" minOccurs="0" />
+              <xs:element name="Prezime" msprop:Generator_ColumnVarNameInTable="columnPrezime" msprop:Generator_ColumnPropNameInRow="Prezime" msprop:Generator_ColumnPropNameInTable="PrezimeColumn" msprop:Generator_UserColumnName="Prezime" type="xs:string" minOccurs="0" />
+              <xs:element name="IDKluba" msprop:Generator_ColumnVarNameInTable="columnIDKluba" msprop:Generator_ColumnPropNameInRow="IDKluba" msprop:Generator_ColumnPropNameInTable="IDKlubaColumn" msprop:Generator_UserColumnName="IDKluba" type="xs:string" minOccurs="0" />
+              <xs:element name="DatumRodjenja" msprop:Generator_ColumnVarNameInTable="columnDatumRodjenja" msprop:Generator_ColumnPropNameInRow="DatumRodjenja" msprop:Generator_ColumnPropNameInTable="DatumRodjenjaColumn" msprop:Generator_UserColumnName="DatumRodjenja" type="xs:string" minOccurs="0" />
+              <xs:element name="Pojas" msprop:Generator_ColumnVarNameInTable="columnPojas" msprop:Generator_ColumnPropNameInRow="Pojas" msprop:Generator_ColumnPropNameInTable="PojasColumn" msprop:Generator_UserColumnName="Pojas" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="clanKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:clan" />
+      <xs:field xpath="mstns:jmb" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

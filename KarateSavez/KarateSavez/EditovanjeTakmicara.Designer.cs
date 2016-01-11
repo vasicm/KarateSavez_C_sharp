@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.sacuvajBtn = new System.Windows.Forms.Button();
             this.zatvoriBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.pojasComboBox = new System.Windows.Forms.ComboBox();
+            this.jmbTxtBox = new System.Windows.Forms.TextBox();
+            this.prezimeTxtBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.sacuvajBtn = new System.Windows.Forms.Button();
             this.imeTxtBox = new System.Windows.Forms.TextBox();
-            this.prezimeTxtBox = new System.Windows.Forms.TextBox();
-            this.jmbTxtBox = new System.Windows.Forms.TextBox();
             this.datumRodjenjadTPicker = new System.Windows.Forms.DateTimePicker();
             this.klubComboBox = new System.Windows.Forms.ComboBox();
-            this.pojasComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,6 +61,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Подаци о такмичару";
             // 
+            // sacuvajBtn
+            // 
+            this.sacuvajBtn.Location = new System.Drawing.Point(247, 332);
+            this.sacuvajBtn.Name = "sacuvajBtn";
+            this.sacuvajBtn.Size = new System.Drawing.Size(75, 23);
+            this.sacuvajBtn.TabIndex = 2;
+            this.sacuvajBtn.Text = "Сачувај";
+            this.sacuvajBtn.UseVisualStyleBackColor = true;
+            this.sacuvajBtn.Click += new System.EventHandler(this.sacuvajBtn_Click);
+            // 
             // zatvoriBtn
             // 
             this.zatvoriBtn.Location = new System.Drawing.Point(328, 332);
@@ -69,7 +79,7 @@
             this.zatvoriBtn.TabIndex = 1;
             this.zatvoriBtn.Text = "Затвори";
             this.zatvoriBtn.UseVisualStyleBackColor = true;
-            this.zatvoriBtn.Click += new System.EventHandler(this.izmijeniBtn_Click);
+            this.zatvoriBtn.Click += new System.EventHandler(this.zatvoriBtn_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -101,14 +111,47 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(409, 300);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // pojasComboBox
+            // 
+            this.pojasComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pojasComboBox.FormattingEnabled = true;
+            this.pojasComboBox.Items.AddRange(new object[] {
+            "бијели",
+            "жути",
+            "зелени",
+            "оранж",
+            "плави",
+            "браон",
+            "црни"});
+            this.pojasComboBox.Location = new System.Drawing.Point(147, 210);
+            this.pojasComboBox.Name = "pojasComboBox";
+            this.pojasComboBox.Size = new System.Drawing.Size(259, 21);
+            this.pojasComboBox.TabIndex = 17;
+            // 
+            // jmbTxtBox
+            // 
+            this.jmbTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.jmbTxtBox.Location = new System.Drawing.Point(147, 112);
+            this.jmbTxtBox.Name = "jmbTxtBox";
+            this.jmbTxtBox.Size = new System.Drawing.Size(259, 20);
+            this.jmbTxtBox.TabIndex = 15;
+            // 
+            // prezimeTxtBox
+            // 
+            this.prezimeTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.prezimeTxtBox.Location = new System.Drawing.Point(147, 63);
+            this.prezimeTxtBox.Name = "prezimeTxtBox";
+            this.prezimeTxtBox.Size = new System.Drawing.Size(259, 20);
+            this.prezimeTxtBox.TabIndex = 14;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 250);
+            this.label11.Location = new System.Drawing.Point(3, 245);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(139, 50);
+            this.label11.Size = new System.Drawing.Size(138, 55);
             this.label11.TabIndex = 11;
             this.label11.Text = "Датум рођења:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,9 +161,9 @@
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 200);
+            this.label9.Location = new System.Drawing.Point(3, 196);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(139, 50);
+            this.label9.Size = new System.Drawing.Size(138, 49);
             this.label9.TabIndex = 9;
             this.label9.Text = "Појас:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -130,9 +173,9 @@
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 150);
+            this.label7.Location = new System.Drawing.Point(3, 147);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 50);
+            this.label7.Size = new System.Drawing.Size(138, 49);
             this.label7.TabIndex = 7;
             this.label7.Text = "Клуб:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -142,9 +185,9 @@
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 100);
+            this.label5.Location = new System.Drawing.Point(3, 98);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 50);
+            this.label5.Size = new System.Drawing.Size(138, 49);
             this.label5.TabIndex = 5;
             this.label5.Text = "ЈМБ:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -154,9 +197,9 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 50);
+            this.label3.Location = new System.Drawing.Point(3, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 50);
+            this.label3.Size = new System.Drawing.Size(138, 49);
             this.label3.TabIndex = 3;
             this.label3.Text = "Презиме:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -168,69 +211,36 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 50);
+            this.label1.Size = new System.Drawing.Size(138, 49);
             this.label1.TabIndex = 1;
             this.label1.Text = "Име:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // sacuvajBtn
-            // 
-            this.sacuvajBtn.Location = new System.Drawing.Point(247, 332);
-            this.sacuvajBtn.Name = "sacuvajBtn";
-            this.sacuvajBtn.Size = new System.Drawing.Size(75, 23);
-            this.sacuvajBtn.TabIndex = 2;
-            this.sacuvajBtn.Text = "Сачувај";
-            this.sacuvajBtn.UseVisualStyleBackColor = true;
-            // 
             // imeTxtBox
             // 
             this.imeTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.imeTxtBox.Location = new System.Drawing.Point(148, 15);
+            this.imeTxtBox.Location = new System.Drawing.Point(147, 14);
             this.imeTxtBox.Name = "imeTxtBox";
-            this.imeTxtBox.Size = new System.Drawing.Size(258, 20);
+            this.imeTxtBox.Size = new System.Drawing.Size(259, 20);
             this.imeTxtBox.TabIndex = 13;
-            // 
-            // prezimeTxtBox
-            // 
-            this.prezimeTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.prezimeTxtBox.Location = new System.Drawing.Point(148, 65);
-            this.prezimeTxtBox.Name = "prezimeTxtBox";
-            this.prezimeTxtBox.Size = new System.Drawing.Size(258, 20);
-            this.prezimeTxtBox.TabIndex = 14;
-            // 
-            // jmbTxtBox
-            // 
-            this.jmbTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.jmbTxtBox.Location = new System.Drawing.Point(148, 115);
-            this.jmbTxtBox.Name = "jmbTxtBox";
-            this.jmbTxtBox.Size = new System.Drawing.Size(258, 20);
-            this.jmbTxtBox.TabIndex = 15;
             // 
             // datumRodjenjadTPicker
             // 
             this.datumRodjenjadTPicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.datumRodjenjadTPicker.Location = new System.Drawing.Point(148, 265);
+            this.datumRodjenjadTPicker.Location = new System.Drawing.Point(147, 262);
             this.datumRodjenjadTPicker.Name = "datumRodjenjadTPicker";
-            this.datumRodjenjadTPicker.Size = new System.Drawing.Size(258, 20);
-            this.datumRodjenjadTPicker.TabIndex = 16;
+            this.datumRodjenjadTPicker.Size = new System.Drawing.Size(259, 20);
+            this.datumRodjenjadTPicker.TabIndex = 18;
+            this.datumRodjenjadTPicker.Value = new System.DateTime(1992, 9, 24, 10, 48, 0, 0);
             // 
             // klubComboBox
             // 
             this.klubComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.klubComboBox.FormattingEnabled = true;
-            this.klubComboBox.Location = new System.Drawing.Point(148, 164);
+            this.klubComboBox.Location = new System.Drawing.Point(147, 161);
             this.klubComboBox.Name = "klubComboBox";
-            this.klubComboBox.Size = new System.Drawing.Size(258, 21);
-            this.klubComboBox.TabIndex = 17;
-            // 
-            // pojasComboBox
-            // 
-            this.pojasComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.pojasComboBox.FormattingEnabled = true;
-            this.pojasComboBox.Location = new System.Drawing.Point(148, 214);
-            this.pojasComboBox.Name = "pojasComboBox";
-            this.pojasComboBox.Size = new System.Drawing.Size(258, 21);
-            this.pojasComboBox.TabIndex = 18;
+            this.klubComboBox.Size = new System.Drawing.Size(259, 21);
+            this.klubComboBox.TabIndex = 16;
             // 
             // EditovanjeTakmicara
             // 

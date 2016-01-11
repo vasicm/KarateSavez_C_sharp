@@ -1,4 +1,6 @@
-﻿namespace KarateSavez
+﻿using System;
+
+namespace KarateSavez
 {
     partial class PrikazTakmicara
     {
@@ -28,439 +30,346 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Kill \'Em All", 1, 0);
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Ride the Lightning", 1, 0);
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Metallica", 1, 0, new System.Windows.Forms.TreeNode[] {
-            treeNode17,
-            treeNode18});
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("A Man and a Woman", 2, 2);
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Vertigo", 2, 2);
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("One Step Closer", 2, 2);
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Love and Peace or Else", 2, 2);
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("How To Dismantle an Atomic Bomb", 1, 0, new System.Windows.Forms.TreeNode[] {
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23});
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("U2", 1, 0, new System.Windows.Forms.TreeNode[] {
-            treeNode24});
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Ultra", 1, 0);
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Personal Jesus", 2, 2);
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Violator", 1, 0, new System.Windows.Forms.TreeNode[] {
-            treeNode27});
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Precious", 2, 2);
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Playing The Angel", 1, 0, new System.Windows.Forms.TreeNode[] {
-            treeNode29});
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Depeche Mode", 1, 0, new System.Windows.Forms.TreeNode[] {
-            treeNode26,
-            treeNode28,
-            treeNode30});
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("B. Marley", 1, 0);
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.tvCollection = new System.Windows.Forms.TreeView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrikazTakmicara));
+            this.takmicariListView = new System.Windows.Forms.ListView();
+            this.jmbColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imeColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.prezimeColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.klubColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.pojasColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.datumRodjenjaColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.imeLabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.prezimeLabel = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.jmbLabel = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.klubLabel = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pojasLabel = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.datumRodjenjaLabel = new System.Windows.Forms.Label();
-            this.izmijeniBtn = new System.Windows.Forms.Button();
-            this.zatvoriBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            this.pretragaTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.pretraziBtn = new System.Windows.Forms.ToolStripButton();
+            this.dbgLabel = new System.Windows.Forms.ToolStripLabel();
+            this.toolStrip3 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
+            this.klubComboBox = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.takmicenjeComboBox = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
+            this.datumComboBox = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
+            this.kategorijaComboBox = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStrip4 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel6 = new System.Windows.Forms.ToolStripLabel();
+            this.grupisiPoComboBox = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStrip5 = new System.Windows.Forms.ToolStrip();
+            this.dodajBtn = new System.Windows.Forms.ToolStripButton();
+            this.izbrisiBtn = new System.Windows.Forms.ToolStripButton();
+            this.prikaziBtn = new System.Windows.Forms.ToolStripButton();
+            this.prijaviBtn = new System.Windows.Forms.ToolStripButton();
+            this.osvjeziBtn = new System.Windows.Forms.ToolStripButton();
+            this.button2 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.toolStrip3.SuspendLayout();
+            this.toolStrip2.SuspendLayout();
+            this.toolStrip4.SuspendLayout();
+            this.toolStrip5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // splitContainer1
+            // takmicariListView
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
+            this.takmicariListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.jmbColHead,
+            this.imeColHead,
+            this.prezimeColHead,
+            this.klubColHead,
+            this.pojasColHead,
+            this.datumRodjenjaColHead});
+            resources.ApplyResources(this.takmicariListView, "takmicariListView");
+            this.takmicariListView.FullRowSelect = true;
+            this.takmicariListView.MultiSelect = false;
+            this.takmicariListView.Name = "takmicariListView";
+            this.takmicariListView.UseCompatibleStateImageBehavior = false;
+            this.takmicariListView.View = System.Windows.Forms.View.Details;
             // 
-            // splitContainer1.Panel1
+            // jmbColHead
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.toolStrip1);
-            this.splitContainer1.Panel1.Controls.Add(this.tvCollection);
+            resources.ApplyResources(this.jmbColHead, "jmbColHead");
             // 
-            // splitContainer1.Panel2
+            // imeColHead
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.zatvoriBtn);
-            this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(750, 469);
-            this.splitContainer1.SplitterDistance = 325;
-            this.splitContainer1.TabIndex = 0;
+            resources.ApplyResources(this.imeColHead, "imeColHead");
             // 
-            // tvCollection
+            // prezimeColHead
             // 
-            this.tvCollection.AllowDrop = true;
-            this.tvCollection.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tvCollection.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.tvCollection.Location = new System.Drawing.Point(0, 28);
-            this.tvCollection.Name = "tvCollection";
-            treeNode17.ImageIndex = 1;
-            treeNode17.Name = "Kill \'Em All";
-            treeNode17.SelectedImageIndex = 0;
-            treeNode17.Text = "Kill \'Em All";
-            treeNode18.ImageIndex = 1;
-            treeNode18.Name = "Ride The Lightning";
-            treeNode18.SelectedImageIndex = 0;
-            treeNode18.Text = "Ride the Lightning";
-            treeNode19.ImageIndex = 1;
-            treeNode19.Name = "Metallica";
-            treeNode19.SelectedImageIndex = 0;
-            treeNode19.Text = "Metallica";
-            treeNode19.ToolTipText = "Metallica Info";
-            treeNode20.ImageIndex = 2;
-            treeNode20.Name = "Node8";
-            treeNode20.SelectedImageIndex = 2;
-            treeNode20.Text = "A Man and a Woman";
-            treeNode21.ImageIndex = 2;
-            treeNode21.Name = "Node9";
-            treeNode21.SelectedImageIndex = 2;
-            treeNode21.Text = "Vertigo";
-            treeNode22.ImageIndex = 2;
-            treeNode22.Name = "Node10";
-            treeNode22.SelectedImageIndex = 2;
-            treeNode22.Text = "One Step Closer";
-            treeNode23.ImageIndex = 2;
-            treeNode23.Name = "Node11";
-            treeNode23.SelectedImageIndex = 2;
-            treeNode23.Text = "Love and Peace or Else";
-            treeNode24.ImageIndex = 1;
-            treeNode24.Name = "How To Dismantle an Atomic Bomb";
-            treeNode24.SelectedImageIndex = 0;
-            treeNode24.Text = "How To Dismantle an Atomic Bomb";
-            treeNode25.ImageIndex = 1;
-            treeNode25.Name = "U2";
-            treeNode25.SelectedImageIndex = 0;
-            treeNode25.Text = "U2";
-            treeNode25.ToolTipText = "U2 Info";
-            treeNode26.ImageIndex = 1;
-            treeNode26.Name = "Ultra";
-            treeNode26.SelectedImageIndex = 0;
-            treeNode26.Text = "Ultra";
-            treeNode27.ImageIndex = 2;
-            treeNode27.Name = "Node17";
-            treeNode27.SelectedImageIndex = 2;
-            treeNode27.Text = "Personal Jesus";
-            treeNode28.ImageIndex = 1;
-            treeNode28.Name = "Violator";
-            treeNode28.SelectedImageIndex = 0;
-            treeNode28.Text = "Violator";
-            treeNode29.ImageIndex = 2;
-            treeNode29.Name = "Precious";
-            treeNode29.SelectedImageIndex = 2;
-            treeNode29.Text = "Precious";
-            treeNode30.ImageIndex = 1;
-            treeNode30.Name = "Playing The Angel";
-            treeNode30.SelectedImageIndex = 0;
-            treeNode30.Text = "Playing The Angel";
-            treeNode31.ImageIndex = 1;
-            treeNode31.Name = "Depeche Mode";
-            treeNode31.SelectedImageIndex = 0;
-            treeNode31.Text = "Depeche Mode";
-            treeNode31.ToolTipText = "Depeche Mode Info";
-            treeNode32.ImageIndex = 1;
-            treeNode32.Name = "B. Marley";
-            treeNode32.SelectedImageIndex = 0;
-            treeNode32.Text = "B. Marley";
-            treeNode32.ToolTipText = "B. Marley Info";
-            this.tvCollection.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode19,
-            treeNode25,
-            treeNode31,
-            treeNode32});
-            this.tvCollection.ShowNodeToolTips = true;
-            this.tvCollection.Size = new System.Drawing.Size(325, 441);
-            this.tvCollection.TabIndex = 2;
+            resources.ApplyResources(this.prezimeColHead, "prezimeColHead");
+            // 
+            // klubColHead
+            // 
+            resources.ApplyResources(this.klubColHead, "klubColHead");
+            // 
+            // pojasColHead
+            // 
+            resources.ApplyResources(this.pojasColHead, "pojasColHead");
+            // 
+            // datumRodjenjaColHead
+            // 
+            resources.ApplyResources(this.datumRodjenjaColHead, "datumRodjenjaColHead");
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
-            this.toolStripComboBox1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.pretragaTextBox,
+            this.pretraziBtn,
+            this.dbgLabel});
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(325, 25);
-            this.toolStrip1.TabIndex = 3;
-            this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(81, 22);
-            this.toolStripLabel1.Text = "Групиши по: ";
+            resources.ApplyResources(this.toolStripLabel1, "toolStripLabel1");
             // 
-            // toolStripComboBox1
+            // pretragaTextBox
             // 
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
+            this.pretragaTextBox.AutoCompleteCustomSource.AddRange(new string[] {
+            resources.GetString("pretragaTextBox.AutoCompleteCustomSource"),
+            resources.GetString("pretragaTextBox.AutoCompleteCustomSource1")});
+            this.pretragaTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.pretragaTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.pretragaTextBox.Name = "pretragaTextBox";
+            resources.ApplyResources(this.pretragaTextBox, "pretragaTextBox");
+            this.pretragaTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.pretragaTextBox_KeyUp);
             // 
-            // groupBox1
+            // pretraziBtn
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.izmijeniBtn);
-            this.groupBox1.Controls.Add(this.tableLayoutPanel1);
-            this.groupBox1.Location = new System.Drawing.Point(20, 28);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(389, 355);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Подаци о такмичару";
+            this.pretraziBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.pretraziBtn.Image = global::KarateSavez.Properties.Resources.search;
+            resources.ApplyResources(this.pretraziBtn, "pretraziBtn");
+            this.pretraziBtn.Name = "pretraziBtn";
+            this.pretraziBtn.Click += new System.EventHandler(this.pretraziBtn_Click);
             // 
-            // tableLayoutPanel1
+            // dbgLabel
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 62.5F));
-            this.tableLayoutPanel1.Controls.Add(this.datumRodjenjaLabel, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.pojasLabel, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.klubLabel, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.jmbLabel, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.prezimeLabel, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.imeLabel, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(383, 300);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.dbgLabel.Name = "dbgLabel";
+            resources.ApplyResources(this.dbgLabel, "dbgLabel");
             // 
-            // label1
+            // toolStrip3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 50);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Име:";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.toolStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel5,
+            this.klubComboBox});
+            resources.ApplyResources(this.toolStrip3, "toolStrip3");
+            this.toolStrip3.Name = "toolStrip3";
             // 
-            // imeLabel
+            // toolStripLabel5
             // 
-            this.imeLabel.AutoSize = true;
-            this.imeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.imeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.imeLabel.Location = new System.Drawing.Point(146, 0);
-            this.imeLabel.Name = "imeLabel";
-            this.imeLabel.Size = new System.Drawing.Size(234, 50);
-            this.imeLabel.TabIndex = 2;
-            this.imeLabel.Text = "Марко";
-            this.imeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripLabel5.Name = "toolStripLabel5";
+            resources.ApplyResources(this.toolStripLabel5, "toolStripLabel5");
             // 
-            // label3
+            // klubComboBox
             // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 50);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Презиме:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.klubComboBox.AutoToolTip = true;
+            this.klubComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.klubComboBox.Items.AddRange(new object[] {
+            resources.GetString("klubComboBox.Items")});
+            this.klubComboBox.Name = "klubComboBox";
+            resources.ApplyResources(this.klubComboBox, "klubComboBox");
+            this.klubComboBox.SelectedIndexChanged += new System.EventHandler(this.klubComboBox_SelectedIndexChanged);
             // 
-            // prezimeLabel
+            // toolStrip2
             // 
-            this.prezimeLabel.AutoSize = true;
-            this.prezimeLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.prezimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prezimeLabel.Location = new System.Drawing.Point(146, 50);
-            this.prezimeLabel.Name = "prezimeLabel";
-            this.prezimeLabel.Size = new System.Drawing.Size(234, 50);
-            this.prezimeLabel.TabIndex = 4;
-            this.prezimeLabel.Text = "Васић";
-            this.prezimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel2,
+            this.takmicenjeComboBox,
+            this.toolStripLabel3,
+            this.datumComboBox,
+            this.toolStripLabel4,
+            this.kategorijaComboBox});
+            resources.ApplyResources(this.toolStrip2, "toolStrip2");
+            this.toolStrip2.Name = "toolStrip2";
             // 
-            // label5
+            // toolStripLabel2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(3, 100);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 50);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "ЈМБ:";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            resources.ApplyResources(this.toolStripLabel2, "toolStripLabel2");
             // 
-            // jmbLabel
+            // takmicenjeComboBox
             // 
-            this.jmbLabel.AutoSize = true;
-            this.jmbLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.jmbLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jmbLabel.Location = new System.Drawing.Point(146, 100);
-            this.jmbLabel.Name = "jmbLabel";
-            this.jmbLabel.Size = new System.Drawing.Size(234, 50);
-            this.jmbLabel.TabIndex = 6;
-            this.jmbLabel.Text = "2409992103526";
-            this.jmbLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.takmicenjeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.takmicenjeComboBox.Items.AddRange(new object[] {
+            resources.GetString("takmicenjeComboBox.Items")});
+            this.takmicenjeComboBox.Name = "takmicenjeComboBox";
+            resources.ApplyResources(this.takmicenjeComboBox, "takmicenjeComboBox");
+            this.takmicenjeComboBox.SelectedIndexChanged += new System.EventHandler(this.takmicenjeComboBox_SelectedIndexChanged);
             // 
-            // label7
+            // toolStripLabel3
             // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(3, 150);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 50);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "Клуб:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripLabel3.Name = "toolStripLabel3";
+            resources.ApplyResources(this.toolStripLabel3, "toolStripLabel3");
             // 
-            // klubLabel
+            // datumComboBox
             // 
-            this.klubLabel.AutoSize = true;
-            this.klubLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.klubLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.klubLabel.Location = new System.Drawing.Point(146, 150);
-            this.klubLabel.Name = "klubLabel";
-            this.klubLabel.Size = new System.Drawing.Size(234, 50);
-            this.klubLabel.TabIndex = 8;
-            this.klubLabel.Text = "ИПОН";
-            this.klubLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.datumComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.datumComboBox.Name = "datumComboBox";
+            resources.ApplyResources(this.datumComboBox, "datumComboBox");
+            this.datumComboBox.SelectedIndexChanged += new System.EventHandler(this.datumComboBox_SelectedIndexChanged);
             // 
-            // label9
+            // toolStripLabel4
             // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(3, 200);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 50);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Појас:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStripLabel4.Name = "toolStripLabel4";
+            resources.ApplyResources(this.toolStripLabel4, "toolStripLabel4");
             // 
-            // pojasLabel
+            // kategorijaComboBox
             // 
-            this.pojasLabel.AutoSize = true;
-            this.pojasLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pojasLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pojasLabel.Location = new System.Drawing.Point(146, 200);
-            this.pojasLabel.Name = "pojasLabel";
-            this.pojasLabel.Size = new System.Drawing.Size(234, 50);
-            this.pojasLabel.TabIndex = 10;
-            this.pojasLabel.Text = "Црни";
-            this.pojasLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.kategorijaComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.kategorijaComboBox.Name = "kategorijaComboBox";
+            resources.ApplyResources(this.kategorijaComboBox, "kategorijaComboBox");
+            this.kategorijaComboBox.SelectedIndexChanged += new System.EventHandler(this.kategorijaComboBox_SelectedIndexChanged);
             // 
-            // label11
+            // toolStrip4
             // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 250);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(137, 50);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Датум рођења:";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripLabel6,
+            this.grupisiPoComboBox});
+            resources.ApplyResources(this.toolStrip4, "toolStrip4");
+            this.toolStrip4.Name = "toolStrip4";
             // 
-            // datumRodjenjaLabel
+            // toolStripLabel6
             // 
-            this.datumRodjenjaLabel.AutoSize = true;
-            this.datumRodjenjaLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.datumRodjenjaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datumRodjenjaLabel.Location = new System.Drawing.Point(146, 250);
-            this.datumRodjenjaLabel.Name = "datumRodjenjaLabel";
-            this.datumRodjenjaLabel.Size = new System.Drawing.Size(234, 50);
-            this.datumRodjenjaLabel.TabIndex = 12;
-            this.datumRodjenjaLabel.Text = "24.09.1992.";
-            this.datumRodjenjaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            resources.ApplyResources(this.toolStripLabel6, "toolStripLabel6");
+            this.toolStripLabel6.Name = "toolStripLabel6";
             // 
-            // izmijeniBtn
+            // grupisiPoComboBox
             // 
-            this.izmijeniBtn.Location = new System.Drawing.Point(308, 322);
-            this.izmijeniBtn.Name = "izmijeniBtn";
-            this.izmijeniBtn.Size = new System.Drawing.Size(75, 23);
-            this.izmijeniBtn.TabIndex = 1;
-            this.izmijeniBtn.Text = "Измијени";
-            this.izmijeniBtn.UseVisualStyleBackColor = true;
+            this.grupisiPoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.grupisiPoComboBox, "grupisiPoComboBox");
+            this.grupisiPoComboBox.Items.AddRange(new object[] {
+            resources.GetString("grupisiPoComboBox.Items"),
+            resources.GetString("grupisiPoComboBox.Items1"),
+            resources.GetString("grupisiPoComboBox.Items2")});
+            this.grupisiPoComboBox.Name = "grupisiPoComboBox";
             // 
-            // zatvoriBtn
+            // toolStrip5
             // 
-            this.zatvoriBtn.Location = new System.Drawing.Point(334, 402);
-            this.zatvoriBtn.Name = "zatvoriBtn";
-            this.zatvoriBtn.Size = new System.Drawing.Size(75, 23);
-            this.zatvoriBtn.TabIndex = 1;
-            this.zatvoriBtn.Text = "Затвори";
-            this.zatvoriBtn.UseVisualStyleBackColor = true;
+            this.toolStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dodajBtn,
+            this.izbrisiBtn,
+            this.prikaziBtn,
+            this.prijaviBtn,
+            this.osvjeziBtn});
+            resources.ApplyResources(this.toolStrip5, "toolStrip5");
+            this.toolStrip5.Name = "toolStrip5";
+            // 
+            // dodajBtn
+            // 
+            this.dodajBtn.Image = global::KarateSavez.Properties.Resources.new1;
+            resources.ApplyResources(this.dodajBtn, "dodajBtn");
+            this.dodajBtn.Name = "dodajBtn";
+            this.dodajBtn.Click += new System.EventHandler(this.dodajBtn_Click);
+            // 
+            // izbrisiBtn
+            // 
+            this.izbrisiBtn.Image = global::KarateSavez.Properties.Resources.help;
+            resources.ApplyResources(this.izbrisiBtn, "izbrisiBtn");
+            this.izbrisiBtn.Name = "izbrisiBtn";
+            // 
+            // prikaziBtn
+            // 
+            this.prikaziBtn.Image = global::KarateSavez.Properties.Resources.open;
+            resources.ApplyResources(this.prikaziBtn, "prikaziBtn");
+            this.prikaziBtn.Name = "prikaziBtn";
+            this.prikaziBtn.Click += new System.EventHandler(this.prikaziBtn_Click);
+            // 
+            // prijaviBtn
+            // 
+            resources.ApplyResources(this.prijaviBtn, "prijaviBtn");
+            this.prijaviBtn.Image = global::KarateSavez.Properties.Resources.help1;
+            this.prijaviBtn.Name = "prijaviBtn";
+            // 
+            // osvjeziBtn
+            // 
+            this.osvjeziBtn.Image = global::KarateSavez.Properties.Resources.reload;
+            resources.ApplyResources(this.osvjeziBtn, "osvjeziBtn");
+            this.osvjeziBtn.Name = "osvjeziBtn";
+            this.osvjeziBtn.Click += new System.EventHandler(this.osvjeziBtn_Click);
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // PrikazTakmicara
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 469);
-            this.Controls.Add(this.splitContainer1);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
+            this.ControlBox = false;
+            this.Controls.Add(this.takmicariListView);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.toolStrip5);
+            this.Controls.Add(this.toolStrip4);
+            this.Controls.Add(this.toolStrip2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.toolStrip3);
+            this.Controls.Add(this.toolStrip1);
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
             this.Name = "PrikazTakmicara";
-            this.Text = "Приказ такмичара";
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.toolStrip3.ResumeLayout(false);
+            this.toolStrip3.PerformLayout();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
+            this.toolStrip4.ResumeLayout(false);
+            this.toolStrip4.PerformLayout();
+            this.toolStrip5.ResumeLayout(false);
+            this.toolStrip5.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.ListView takmicariListView;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
-        private System.Windows.Forms.TreeView tvCollection;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button zatvoriBtn;
-        private System.Windows.Forms.Button izmijeniBtn;
-        private System.Windows.Forms.Label datumRodjenjaLabel;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label pojasLabel;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label klubLabel;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label jmbLabel;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label prezimeLabel;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label imeLabel;
+        private System.Windows.Forms.ToolStripTextBox pretragaTextBox;
+        private System.Windows.Forms.ToolStripButton pretraziBtn;
+        private System.Windows.Forms.ToolStrip toolStrip3;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel5;
+        private System.Windows.Forms.ToolStripComboBox klubComboBox;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripComboBox takmicenjeComboBox;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
+        private System.Windows.Forms.ToolStripComboBox datumComboBox;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
+        private System.Windows.Forms.ToolStripComboBox kategorijaComboBox;
+        private System.Windows.Forms.ToolStrip toolStrip4;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel6;
+        private System.Windows.Forms.ToolStripComboBox grupisiPoComboBox;
+        private System.Windows.Forms.ToolStrip toolStrip5;
+        private System.Windows.Forms.ToolStripButton dodajBtn;
+        private System.Windows.Forms.ToolStripButton izbrisiBtn;
+        private System.Windows.Forms.ToolStripButton prikaziBtn;
+        private System.Windows.Forms.ToolStripButton osvjeziBtn;
+        private System.Windows.Forms.ToolStripButton prijaviBtn;
+        private System.Windows.Forms.ColumnHeader jmbColHead;
+        private System.Windows.Forms.ColumnHeader imeColHead;
+        private System.Windows.Forms.ColumnHeader prezimeColHead;
+        private System.Windows.Forms.ColumnHeader klubColHead;
+        private System.Windows.Forms.ColumnHeader pojasColHead;
+        private System.Windows.Forms.ColumnHeader datumRodjenjaColHead;
+        private System.Windows.Forms.ToolStripLabel dbgLabel;
+        private System.Windows.Forms.Button button2;
     }
 }
