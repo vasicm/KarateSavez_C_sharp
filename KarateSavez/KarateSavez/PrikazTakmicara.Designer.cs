@@ -369,7 +369,7 @@ namespace KarateSavez
         private System.Windows.Forms.ColumnHeader klubColHead;
         private System.Windows.Forms.ColumnHeader pojasColHead;
         private System.Windows.Forms.ColumnHeader datumRodjenjaColHead;
-        private System.Windows.Forms.ToolStripLabel dbgLabel;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripLabel dbgLabel;
     }
 }

@@ -69,11 +69,29 @@
     <Compile Include="dto\KarateKlub.cs" />
     <Compile Include="dto\Oglas.cs" />
     <Compile Include="dto\Takmicenje.cs" />
+    <Compile Include="EditovanjeBorbe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditovanjeBorbe.Designer.cs">
+      <DependentUpon>EditovanjeBorbe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditovanjeOglasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditovanjeOglasa.Designer.cs">
+      <DependentUpon>EditovanjeOglasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditovanjeTakmicara.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EditovanjeTakmicara.Designer.cs">
       <DependentUpon>EditovanjeTakmicara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditovanjeTakmicenja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditovanjeTakmicenja.Designer.cs">
+      <DependentUpon>EditovanjeTakmicenja.cs</DependentUpon>
     </Compile>
     <Compile Include="pocetnaForma.cs">
       <SubType>Form</SubType>
@@ -81,28 +99,55 @@
     <Compile Include="pocetnaForma.Designer.cs">
       <DependentUpon>pocetnaForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrikazOglasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazOglasa.Designer.cs">
+      <DependentUpon>PrikazOglasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrikazTakmicara.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PrikazTakmicara.Designer.cs">
       <DependentUpon>PrikazTakmicara.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Takmicenja.cs">
+    <Compile Include="PrikazTakmicenja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Takmicenja.Designer.cs">
-      <DependentUpon>Takmicenja.cs</DependentUpon>
+    <Compile Include="PrikazTakmicenja.Designer.cs">
+      <DependentUpon>PrikazTakmicenja.cs</DependentUpon>
     </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PrikazBorbi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrikazBorbi.Designer.cs">
+      <DependentUpon>PrikazBorbi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EditovanjeBorbe.resx">
+      <DependentUpon>EditovanjeBorbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditovanjeOglasa.resx">
+      <DependentUpon>EditovanjeOglasa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditovanjeTakmicara.resx">
       <DependentUpon>EditovanjeTakmicara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditovanjeTakmicenja.resx">
+      <DependentUpon>EditovanjeTakmicenja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pocetnaForma.resx">
       <DependentUpon>pocetnaForma.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PrikazOglasa.resx">
+      <DependentUpon>PrikazOglasa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PrikazTakmicara.resx">
       <DependentUpon>PrikazTakmicara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrikazTakmicenja.resx">
+      <DependentUpon>PrikazTakmicenja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,8 +159,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Takmicenja.resx">
-      <DependentUpon>Takmicenja.cs</DependentUpon>
+    <EmbeddedResource Include="PrikazBorbi.resx">
+      <DependentUpon>PrikazBorbi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="dto\clanDataSet.xsc">
       <DependentUpon>clanDataSet.xsd</DependentUpon>

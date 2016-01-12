@@ -12,9 +12,9 @@ using KarateSavez.dto;
 
 namespace KarateSavez
 {
-    public partial class Takmicenja : Form
+    public partial class PrikazBorbi : Form
     {
-        public Takmicenja()
+        public PrikazBorbi()
         {
             InitializeComponent();
             this.takmicenjeComboBox.Items.AddRange(TakmicenjeDAO.naziviSvi().ToArray());
@@ -69,6 +69,31 @@ namespace KarateSavez
 
         private void pomocBtn_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Није имплементирано", "Обавјештење!", MessageBoxButtons.YesNo);
+        }
+
+        private void dodajBtn_Click(object sender, EventArgs e)
+        {
+            EditovanjeBorbe dialog = new EditovanjeBorbe();
+            dialog.ShowDialog();
+        }
+
+        private void prikaziBtn_Click(object sender, EventArgs e)
+        {
+            //TODO
+            EditovanjeBorbe dialog = new EditovanjeBorbe();
+            dialog.ShowDialog();
+        }
+
+        private void osvjeziBtn_Click(object sender, EventArgs e)
+        {
+            //TODO
+            MessageBox.Show("Није имплементирано", "Обавјештење!", MessageBoxButtons.YesNo);
+        }
+
+        private void izbrisiBtn_Click(object sender, EventArgs e)
+        {
+            //TODO
             MessageBox.Show("Није имплементирано", "Обавјештење!", MessageBoxButtons.YesNo);
         }
     }

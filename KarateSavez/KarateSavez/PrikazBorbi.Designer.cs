@@ -1,6 +1,6 @@
 ﻿namespace KarateSavez
 {
-    partial class Takmicenja
+    partial class PrikazBorbi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Први круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Други круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Трећи круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
+            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Први круг", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Други круг", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("Трећи круг", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
             new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "1.", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))),
             new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "Марко Васић", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)))),
             new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "4:2", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))),
@@ -67,19 +67,19 @@
             this.rezultatColHead,
             this.crveniColHead});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Top;
-            listViewGroup1.Header = "Први круг";
-            listViewGroup1.Name = "prviKrugListVG";
-            listViewGroup2.Header = "Други круг";
-            listViewGroup2.Name = "drugiKrugListVG";
-            listViewGroup3.Header = "Трећи круг";
-            listViewGroup3.Name = "treciKrugListVG";
+            listViewGroup7.Header = "Први круг";
+            listViewGroup7.Name = "prviKrugListVG";
+            listViewGroup8.Header = "Други круг";
+            listViewGroup8.Name = "drugiKrugListVG";
+            listViewGroup9.Header = "Трећи круг";
+            listViewGroup9.Name = "treciKrugListVG";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2,
-            listViewGroup3});
-            listViewItem1.Group = listViewGroup1;
+            listViewGroup7,
+            listViewGroup8,
+            listViewGroup9});
+            listViewItem3.Group = listViewGroup7;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem3});
             this.listView1.Location = new System.Drawing.Point(0, 50);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(764, 268);
@@ -205,6 +205,7 @@
             this.dodajBtn.Name = "dodajBtn";
             this.dodajBtn.Size = new System.Drawing.Size(57, 22);
             this.dodajBtn.Text = "Додај";
+            this.dodajBtn.Click += new System.EventHandler(this.dodajBtn_Click);
             // 
             // izbrisiBtn
             // 
@@ -213,6 +214,7 @@
             this.izbrisiBtn.Name = "izbrisiBtn";
             this.izbrisiBtn.Size = new System.Drawing.Size(80, 22);
             this.izbrisiBtn.Text = "Избриши";
+            this.izbrisiBtn.Click += new System.EventHandler(this.izbrisiBtn_Click);
             // 
             // prikaziBtn
             // 
@@ -221,6 +223,7 @@
             this.prikaziBtn.Name = "prikaziBtn";
             this.prikaziBtn.Size = new System.Drawing.Size(78, 22);
             this.prikaziBtn.Text = "Прикажи";
+            this.prikaziBtn.Click += new System.EventHandler(this.prikaziBtn_Click);
             // 
             // osvjeziBtn
             // 
@@ -229,8 +232,9 @@
             this.osvjeziBtn.Name = "osvjeziBtn";
             this.osvjeziBtn.Size = new System.Drawing.Size(107, 22);
             this.osvjeziBtn.Text = "Освјежи листу";
+            this.osvjeziBtn.Click += new System.EventHandler(this.osvjeziBtn_Click);
             // 
-            // Takmicenja
+            // PrikazBorbi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -241,7 +245,7 @@
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.pomocBtn);
             this.Controls.Add(this.zatvoriBtn);
-            this.Name = "Takmicenja";
+            this.Name = "PrikazBorbi";
             this.Text = "Такмичења";
             this.toolStrip2.ResumeLayout(false);
             this.toolStrip2.PerformLayout();

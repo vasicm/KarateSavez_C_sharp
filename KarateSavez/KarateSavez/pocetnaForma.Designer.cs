@@ -29,24 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pocetnaForma));
-            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Такмичење", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Друге активности", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("Испит", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Куп Републике Српске",
-            "Карате клуб ИПОН Прњавор организује куп Републике Српске који ће се одржати 22.3." +
-                "2016. године у градској дворани.",
-            "10.01.2016"}, -1);
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Првенстов Републике Српске",
-            "Карате клуб Слога Добој организује куп Републике Српске који ће се одржати 16.4.2" +
-                "016. године у градској дворани.",
-            "11.01.2016."}, -1);
-            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Љетни камп",
-            "Карате клуб Леотар из требиња организује љетни спортски камп, који ће се одршати " +
-                "у требињу и трајаће од 10.08.1016. до 20.08.2016.",
-            "15.01.2016."}, -1);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.новиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,16 +48,12 @@
             this.оКаратеСавезуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.упутстоЗаКоришћењеАпликацијеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.pocetnaStripBtn = new System.Windows.Forms.ToolStripButton();
+            this.oglasiStripBtn = new System.Windows.Forms.ToolStripButton();
             this.takmicenjaStripBtn = new System.Windows.Forms.ToolStripButton();
-            this.pregletStripBtn = new System.Windows.Forms.ToolStripButton();
-            this.podesavanjaStripBtn = new System.Windows.Forms.ToolStripButton();
+            this.borbaStripBtn = new System.Windows.Forms.ToolStripButton();
+            this.takmicariStripBtn = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.naslovColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tekstOglasaColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.vrijemeObjaveColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -218,26 +196,26 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pocetnaStripBtn,
+            this.oglasiStripBtn,
             this.takmicenjaStripBtn,
-            this.pregletStripBtn,
-            this.podesavanjaStripBtn});
+            this.borbaStripBtn,
+            this.takmicariStripBtn});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(892, 26);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // pocetnaStripBtn
+            // oglasiStripBtn
             // 
-            this.pocetnaStripBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.pocetnaStripBtn.Image = ((System.Drawing.Image)(resources.GetObject("pocetnaStripBtn.Image")));
-            this.pocetnaStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.pocetnaStripBtn.Name = "pocetnaStripBtn";
-            this.pocetnaStripBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pocetnaStripBtn.Size = new System.Drawing.Size(83, 23);
-            this.pocetnaStripBtn.Text = "Почетна";
-            this.pocetnaStripBtn.Click += new System.EventHandler(this.pocetnaStripBtn_Click);
+            this.oglasiStripBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.oglasiStripBtn.Image = ((System.Drawing.Image)(resources.GetObject("oglasiStripBtn.Image")));
+            this.oglasiStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.oglasiStripBtn.Name = "oglasiStripBtn";
+            this.oglasiStripBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.oglasiStripBtn.Size = new System.Drawing.Size(73, 23);
+            this.oglasiStripBtn.Text = "Огласи";
+            this.oglasiStripBtn.Click += new System.EventHandler(this.oglasiStripBtn_Click);
             // 
             // takmicenjaStripBtn
             // 
@@ -249,23 +227,23 @@
             this.takmicenjaStripBtn.ToolTipText = "Такмичења";
             this.takmicenjaStripBtn.Click += new System.EventHandler(this.takmicenjaStripBtn_Click);
             // 
-            // pregletStripBtn
+            // borbaStripBtn
             // 
-            this.pregletStripBtn.Image = ((System.Drawing.Image)(resources.GetObject("pregletStripBtn.Image")));
-            this.pregletStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.pregletStripBtn.Name = "pregletStripBtn";
-            this.pregletStripBtn.Size = new System.Drawing.Size(135, 23);
-            this.pregletStripBtn.Text = "Преглед такмичара";
-            this.pregletStripBtn.Click += new System.EventHandler(this.pregletStripBtn_Click);
+            this.borbaStripBtn.Image = global::KarateSavez.Properties.Resources.help1;
+            this.borbaStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.borbaStripBtn.Name = "borbaStripBtn";
+            this.borbaStripBtn.Size = new System.Drawing.Size(61, 23);
+            this.borbaStripBtn.Text = "Борба";
+            this.borbaStripBtn.Click += new System.EventHandler(this.borbaStripBtn_Click);
             // 
-            // podesavanjaStripBtn
+            // takmicariStripBtn
             // 
-            this.podesavanjaStripBtn.Image = global::KarateSavez.Properties.Resources.help;
-            this.podesavanjaStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.podesavanjaStripBtn.Name = "podesavanjaStripBtn";
-            this.podesavanjaStripBtn.Size = new System.Drawing.Size(100, 23);
-            this.podesavanjaStripBtn.Text = "Подешавања";
-            this.podesavanjaStripBtn.Click += new System.EventHandler(this.podesavanjaStripBtn_Click);
+            this.takmicariStripBtn.Image = global::KarateSavez.Properties.Resources.help;
+            this.takmicariStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.takmicariStripBtn.Name = "takmicariStripBtn";
+            this.takmicariStripBtn.Size = new System.Drawing.Size(89, 23);
+            this.takmicariStripBtn.Text = "Такмичари";
+            this.takmicariStripBtn.Click += new System.EventHandler(this.takmicariStripBtn_Click);
             // 
             // statusStrip1
             // 
@@ -284,62 +262,11 @@
             this.toolStripStatusLabel2.Text = "Аутор: Марко Васић ЕТФБЛ  1113/11";
             this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // listView1
-            // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.naslovColHead,
-            this.tekstOglasaColHead,
-            this.vrijemeObjaveColHead});
-            listViewGroup7.Header = "Такмичење";
-            listViewGroup7.Name = "takmicenjeListVG";
-            listViewGroup8.Header = "Друге активности";
-            listViewGroup8.Name = "drugeAktivnostiListVG";
-            listViewGroup9.Header = "Испит";
-            listViewGroup9.Name = "ispitListVG";
-            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup7,
-            listViewGroup8,
-            listViewGroup9});
-            listViewItem7.Group = listViewGroup7;
-            listViewItem8.Group = listViewGroup7;
-            listViewItem9.Group = listViewGroup8;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem7,
-            listViewItem8,
-            listViewItem9});
-            this.listView1.Location = new System.Drawing.Point(0, 53);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(892, 557);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.Visible = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
-            // 
-            // naslovColHead
-            // 
-            this.naslovColHead.Text = "Наслов огласа";
-            this.naslovColHead.Width = 229;
-            // 
-            // tekstOglasaColHead
-            // 
-            this.tekstOglasaColHead.Text = "Текст огласа";
-            this.tekstOglasaColHead.Width = 406;
-            // 
-            // vrijemeObjaveColHead
-            // 
-            this.vrijemeObjaveColHead.Text = "Вријеме објаве";
-            this.vrijemeObjaveColHead.Width = 250;
-            // 
             // pocetnaForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 635);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -365,15 +292,11 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton pocetnaStripBtn;
+        private System.Windows.Forms.ToolStripButton oglasiStripBtn;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripButton takmicenjaStripBtn;
-        private System.Windows.Forms.ToolStripButton pregletStripBtn;
-        private System.Windows.Forms.ToolStripButton podesavanjaStripBtn;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader vrijemeObjaveColHead;
-        private System.Windows.Forms.ColumnHeader naslovColHead;
-        private System.Windows.Forms.ColumnHeader tekstOglasaColHead;
+        private System.Windows.Forms.ToolStripButton borbaStripBtn;
+        private System.Windows.Forms.ToolStripButton takmicariStripBtn;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.ToolStripMenuItem новиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem огласToolStripMenuItem;
