@@ -4,87 +4,116 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-
+using System.Windows.Forms;
 
 namespace KarateSavez.dto
 {
-    class Oglas
+    class Oglas : ListViewItem
     {
-        private int id;
-        private string naziv;
-        private string tekst;
-        private DateTime datumObjave;
+        private int idOglasa;
+        private string naslovOglasa;
+        private string tekstOglasa;
+        private DateTime datumOglasa;
+        private string tipOglasa;
 
+        public void kreirajListViewItem()
+        {
+            base.Text = naslovOglasa;
+            base.SubItems.AddRange(new string[] {
+                                                    tekstOglasa,
+                                                    datumOglasa.ToString()
+                                                }
+            );
+        }
+        
         public void popuniObjekat(MySqlDataReader reader)
         {
-            this.id = Convert.ToInt32(reader["id"].ToString());
-            this.naziv = reader["naziv"].ToString();
-            this.tekst = reader["tekst"].ToString();
-            DateTime.TryParse(reader["datumObjave"].ToString(), out this.datumObjave);
+            this.idOglasa = Convert.ToInt32(reader["idOglasa"].ToString());
+            this.naslovOglasa = reader["naslovOglasa"].ToString();
+            this.tekstOglasa = reader["tekstOglasa"].ToString();
+            DateTime.TryParse(reader["datumOglasa"].ToString(), out this.datumOglasa);
+            this.tipOglasa = reader["tipOglasa"].ToString();
+            this.kreirajListViewItem();
         }
 
         public Oglas()
         {
         }
 
-        public Oglas(int id, string naziv, string tekst, DateTime datumObjave)
+        public Oglas(int idOglasa, string naslovOglasa, string tekstOglasa, DateTime datumOglasa, string tipOglasa)
         {
-            this.id = id;
-            this.naziv = naziv;
-            this.tekst = tekst;
-            this.datumObjave = datumObjave;
-        }
+            this.IdOglasa = idOglasa;
+            this.NaslovOglasa = naslovOglasa;
+            this.TekstOglasa = tekstOglasa;
+            this.DatumOglasa = datumOglasa;
+            this.TipOglasa = tipOglasa;
 
-        public int Id
+            this.kreirajListViewItem();
+        }
+        public int IdOglasa
         {
             get
             {
-                return id;
+                return idOglasa;
             }
 
             set
             {
-                id = value;
+                idOglasa = value;
             }
         }
 
-        public string Naziv
+        public string NaslovOglasa
         {
             get
             {
-                return naziv;
+                return naslovOglasa;
             }
 
             set
             {
-                naziv = value;
+                naslovOglasa = value;
             }
         }
 
-        public string Tekst
+        public string TekstOglasa
         {
             get
             {
-                return tekst;
+                return tekstOglasa;
             }
 
             set
             {
-                tekst = value;
+                tekstOglasa = value;
             }
         }
 
-        public DateTime DatumObjave
+        public DateTime DatumOglasa
         {
             get
             {
-                return datumObjave;
+                return datumOglasa;
             }
 
             set
             {
-                datumObjave = value;
+                datumOglasa = value;
             }
         }
+
+        public string TipOglasa
+        {
+            get
+            {
+                return tipOglasa;
+            }
+
+            set
+            {
+                tipOglasa = value;
+            }
+        }
+
     }
 }

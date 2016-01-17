@@ -28,14 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("Први круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup14 = new System.Windows.Forms.ListViewGroup("Други круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup15 = new System.Windows.Forms.ListViewGroup("Трећи круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
-            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "1.", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))),
-            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "Марко Васић", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)))),
-            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "4:2", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))),
-            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "Милан Јанковић", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))))}, -1);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.pretraziTextBox = new System.Windows.Forms.ToolStripTextBox();
@@ -44,12 +36,12 @@
             this.dodajBtn = new System.Windows.Forms.ToolStripButton();
             this.izbrisiBtn = new System.Windows.Forms.ToolStripButton();
             this.prikaziBtn = new System.Windows.Forms.ToolStripButton();
-            this.osvjeziBtn = new System.Windows.Forms.ToolStripButton();
             this.takmicenjaListView = new System.Windows.Forms.ListView();
             this.nazivColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.datumColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.organizatorColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.adresaColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dbgLabel = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1.SuspendLayout();
             this.toolStrip5.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +51,8 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.pretraziTextBox,
-            this.pretraziBtn});
+            this.pretraziBtn,
+            this.dbgLabel});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(680, 25);
@@ -74,8 +67,11 @@
             // 
             // pretraziTextBox
             // 
+            this.pretraziTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.pretraziTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.pretraziTextBox.Name = "pretraziTextBox";
             this.pretraziTextBox.Size = new System.Drawing.Size(150, 25);
+            this.pretraziTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.pretraziTextBox_KeyUp);
             // 
             // pretraziBtn
             // 
@@ -92,8 +88,7 @@
             this.toolStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dodajBtn,
             this.izbrisiBtn,
-            this.prikaziBtn,
-            this.osvjeziBtn});
+            this.prikaziBtn});
             this.toolStrip5.Location = new System.Drawing.Point(0, 25);
             this.toolStrip5.Name = "toolStrip5";
             this.toolStrip5.Size = new System.Drawing.Size(680, 25);
@@ -127,15 +122,6 @@
             this.prikaziBtn.Text = "Прикажи";
             this.prikaziBtn.Click += new System.EventHandler(this.prikaziBtn_Click);
             // 
-            // osvjeziBtn
-            // 
-            this.osvjeziBtn.Image = global::KarateSavez.Properties.Resources.reload;
-            this.osvjeziBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.osvjeziBtn.Name = "osvjeziBtn";
-            this.osvjeziBtn.Size = new System.Drawing.Size(107, 22);
-            this.osvjeziBtn.Text = "Освјежи листу";
-            this.osvjeziBtn.Click += new System.EventHandler(this.osvjeziBtn_Click);
-            // 
             // takmicenjaListView
             // 
             this.takmicenjaListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -146,20 +132,9 @@
             this.datumColHead,
             this.organizatorColHead,
             this.adresaColHead});
-            listViewGroup13.Header = "Први круг";
-            listViewGroup13.Name = "prviKrugListVG";
-            listViewGroup14.Header = "Други круг";
-            listViewGroup14.Name = "drugiKrugListVG";
-            listViewGroup15.Header = "Трећи круг";
-            listViewGroup15.Name = "treciKrugListVG";
-            this.takmicenjaListView.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup13,
-            listViewGroup14,
-            listViewGroup15});
-            listViewItem5.Group = listViewGroup13;
-            this.takmicenjaListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5});
+            this.takmicenjaListView.FullRowSelect = true;
             this.takmicenjaListView.Location = new System.Drawing.Point(0, 49);
+            this.takmicenjaListView.MultiSelect = false;
             this.takmicenjaListView.Name = "takmicenjaListView";
             this.takmicenjaListView.Size = new System.Drawing.Size(680, 339);
             this.takmicenjaListView.TabIndex = 26;
@@ -185,6 +160,12 @@
             // 
             this.adresaColHead.Text = "Адреса";
             this.adresaColHead.Width = 147;
+            // 
+            // dbgLabel
+            // 
+            this.dbgLabel.Name = "dbgLabel";
+            this.dbgLabel.Size = new System.Drawing.Size(86, 22);
+            this.dbgLabel.Text = "toolStripLabel2";
             // 
             // PrikazTakmicenja
             // 
@@ -215,11 +196,11 @@
         private System.Windows.Forms.ToolStripButton dodajBtn;
         private System.Windows.Forms.ToolStripButton izbrisiBtn;
         private System.Windows.Forms.ToolStripButton prikaziBtn;
-        private System.Windows.Forms.ToolStripButton osvjeziBtn;
         private System.Windows.Forms.ListView takmicenjaListView;
         private System.Windows.Forms.ColumnHeader nazivColHead;
         private System.Windows.Forms.ColumnHeader datumColHead;
         private System.Windows.Forms.ColumnHeader organizatorColHead;
         private System.Windows.Forms.ColumnHeader adresaColHead;
+        private System.Windows.Forms.ToolStripLabel dbgLabel;
     }
 }

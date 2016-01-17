@@ -26,6 +26,11 @@ namespace KarateSavez.dto
             this.klub = reader["NazivKarateKluba"].ToString() + " " + reader["Sjediste"].ToString();
         }
 
+        public string ToString()
+        {
+            return ime + " " + prezime;
+        }
+
         public System.Windows.Forms.ListViewItem ListViewItem
         {
             get

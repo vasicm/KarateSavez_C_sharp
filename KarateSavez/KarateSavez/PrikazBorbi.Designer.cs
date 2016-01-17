@@ -28,16 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Први круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Други круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("Трећи круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new System.Windows.Forms.ListViewItem.ListViewSubItem[] {
-            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "1.", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))),
-            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "Марко Васић", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)))),
-            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "4:2", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))),
-            new System.Windows.Forms.ListViewItem.ListViewSubItem(null, "Милан Јанковић", System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))))}, -1);
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.redinBrojColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Први круг", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Други круг", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Трећи круг", System.Windows.Forms.HorizontalAlignment.Left);
+            this.borbeListView = new System.Windows.Forms.ListView();
             this.plaviColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.rezultatColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.crveniColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -59,53 +53,44 @@
             this.toolStrip5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listView1
+            // borbeListView
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.redinBrojColHead,
+            this.borbeListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.plaviColHead,
             this.rezultatColHead,
             this.crveniColHead});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Top;
-            listViewGroup7.Header = "Први круг";
-            listViewGroup7.Name = "prviKrugListVG";
-            listViewGroup8.Header = "Други круг";
-            listViewGroup8.Name = "drugiKrugListVG";
-            listViewGroup9.Header = "Трећи круг";
-            listViewGroup9.Name = "treciKrugListVG";
-            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup7,
-            listViewGroup8,
-            listViewGroup9});
-            listViewItem3.Group = listViewGroup7;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem3});
-            this.listView1.Location = new System.Drawing.Point(0, 50);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(764, 268);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // redinBrojColHead
-            // 
-            this.redinBrojColHead.Text = "Редни број борбе";
-            this.redinBrojColHead.Width = 148;
+            this.borbeListView.Dock = System.Windows.Forms.DockStyle.Top;
+            listViewGroup1.Header = "Први круг";
+            listViewGroup1.Name = "prviKrugListVG";
+            listViewGroup2.Header = "Други круг";
+            listViewGroup2.Name = "drugiKrugListVG";
+            listViewGroup3.Header = "Трећи круг";
+            listViewGroup3.Name = "treciKrugListVG";
+            this.borbeListView.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup1,
+            listViewGroup2,
+            listViewGroup3});
+            this.borbeListView.Location = new System.Drawing.Point(0, 50);
+            this.borbeListView.Name = "borbeListView";
+            this.borbeListView.Size = new System.Drawing.Size(764, 268);
+            this.borbeListView.TabIndex = 2;
+            this.borbeListView.UseCompatibleStateImageBehavior = false;
+            this.borbeListView.View = System.Windows.Forms.View.Details;
             // 
             // plaviColHead
             // 
             this.plaviColHead.Text = "Плави";
-            this.plaviColHead.Width = 206;
+            this.plaviColHead.Width = 271;
             // 
             // rezultatColHead
             // 
             this.rezultatColHead.Text = "Резултат";
-            this.rezultatColHead.Width = 167;
+            this.rezultatColHead.Width = 118;
             // 
             // crveniColHead
             // 
             this.crveniColHead.Text = "Црвени";
-            this.crveniColHead.Width = 147;
+            this.crveniColHead.Width = 279;
             // 
             // zatvoriBtn
             // 
@@ -240,7 +225,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 373);
             this.ControlBox = false;
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.borbeListView);
             this.Controls.Add(this.toolStrip5);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.pomocBtn);
@@ -257,13 +242,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView borbeListView;
         private System.Windows.Forms.Button zatvoriBtn;
         private System.Windows.Forms.Button pomocBtn;
         private System.Windows.Forms.ColumnHeader plaviColHead;
         private System.Windows.Forms.ColumnHeader rezultatColHead;
         private System.Windows.Forms.ColumnHeader crveniColHead;
-        private System.Windows.Forms.ColumnHeader redinBrojColHead;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripComboBox takmicenjeComboBox;

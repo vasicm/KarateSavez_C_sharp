@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace KarateSavez.dto
 {
-    class Takmicenje
+    class Takmicenje : ListViewItem
     {
         private int idTakmicenja;
         private string nazivTakmicenja;
@@ -15,13 +16,26 @@ namespace KarateSavez.dto
         private string organizator;
         private string adresa;
 
+        public void kreirajListViewItem()
+        {
+            base.Text = nazivTakmicenja;
+            base.SubItems.AddRange(new string[] {
+                                                   datumPocetka.ToString("yyyy-MM-dd"),
+                                                   organizator,
+                                                   adresa
+                                                }
+            );
+        }
+
         public void popuniObjekat(MySqlDataReader reader)
         {
             this.idTakmicenja = Convert.ToInt32(reader["idTakmicenja"].ToString());
             this.nazivTakmicenja = reader["nazivTakmicenja"].ToString();
             DateTime.TryParse(reader["datumPocetka"].ToString(), out this.datumPocetka);
-            //this.organizator = reader["organizator"].ToString();
+            this.organizator = reader["organizator"].ToString();
             this.adresa = reader["adresa"].ToString();
+
+            this.kreirajListViewItem();
         }
 
         public Takmicenje()
@@ -35,6 +49,8 @@ namespace KarateSavez.dto
             this.datumPocetka = datum;
             this.organizator = organizator;
             this.adresa = adresa;
+
+            this.kreirajListViewItem();
         }
 
         public int Id

@@ -16,3 +16,4 @@ C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\Kar
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.EditovanjeBorbe.resources
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.EditovanjeOglasa.resources
 C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.EditovanjeTakmicenja.resources
+C:\Users\Vasic\Documents\ProjektniZadaci2016\KarateSavez_C_sharp\KarateSavez\KarateSavez\obj\Debug\KarateSavez.PrijavaTakmicara.resources

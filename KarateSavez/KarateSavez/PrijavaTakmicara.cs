@@ -8,16 +8,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KarateSavez.dao;
-using KarateSavez.dto;
-using System.Collections;
 
 namespace KarateSavez
 {
-    public partial class PrikazBorbi : Form
+    public partial class PrijavaTakmicara : Form
     {
-        public PrikazBorbi()
+        long jmb;
+
+        public long Jmb
+        {
+            get
+            {
+                return jmb;
+            }
+
+            set
+            {
+                jmb = value;
+            }
+        }
+
+        public PrijavaTakmicara()
         {
             InitializeComponent();
+
+            jmb = 0;
             this.takmicenjeComboBox.Items.AddRange(TakmicenjeDAO.naziviSvi().ToArray());
             this.takmicenjeComboBox.SelectedIndex = 0;
         }
@@ -60,55 +75,13 @@ namespace KarateSavez
 
         private void kategorijaComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            osvjezi();
         }
 
-        private void zatvoriBtn_Click(object sender, EventArgs e)
+        private void prijaviBtn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Да ли сте сигурни?", "Питање!", MessageBoxButtons.YesNo) == DialogResult.Yes) this.Close();
-        }
-
-        private void pomocBtn_Click(object sender, EventArgs e)
-        {
-            //TODO
-            MessageBox.Show("Није имплементирано", "Обавјештење!", MessageBoxButtons.YesNo);
-        }
-
-        private void dodajBtn_Click(object sender, EventArgs e)
-        {
-            EditovanjeBorbe dialog = new EditovanjeBorbe();
-            dialog.ShowDialog();
-            osvjezi();
-        }
-
-        private void prikaziBtn_Click(object sender, EventArgs e)
-        {
-            EditovanjeBorbe dialog = new EditovanjeBorbe();
-            dialog.Borba = (Borba)borbeListView.SelectedItems[0];
-            dialog.ShowDialog();
-            osvjezi();
-        }
-
-        private void osvjeziBtn_Click(object sender, EventArgs e)
-        {
-            osvjezi();
-        }
-
-        private void izbrisiBtn_Click(object sender, EventArgs e)
-        {
-            BorbaDAO.brisi((Borba)borbeListView.SelectedItems[0]);
-            osvjezi();
-        }
-
-        private void osvjezi()
-        {
-            string nazivTakmmicenja = takmicenjeComboBox.SelectedItem.ToString();
-            string datumTakmicenja = datumComboBox.SelectedItem.ToString();
-            string kategorija = kategorijaComboBox.SelectedItem.ToString();
             string[] datum = datumComboBox.SelectedItem.ToString().Split(' ')[0].Split('/');
-
-            borbeListView.Items.Clear();
-            borbeListView.Items.AddRange((ListViewItem[])BorbaDAO.borbeSve(nazivTakmmicenja, datum[2] + datum[1] + datum[0], kategorija).ToArray(typeof(ListViewItem)));
+            if (PrijavaDAO.prijavi(jmb, takmicenjeComboBox.SelectedItem.ToString(), datum[2] + datum[1] + datum[0], kategorijaComboBox.SelectedItem.ToString()) == true) MessageBox.Show("Успјешно сте пријавили такмичара");
+            else MessageBox.Show("Догодила се грешка приликом пријаве такмичара");
         }
     }
 }

@@ -55,7 +55,7 @@
             this.izbrisiBtn = new System.Windows.Forms.ToolStripButton();
             this.prikaziBtn = new System.Windows.Forms.ToolStripButton();
             this.osvjeziBtn = new System.Windows.Forms.ToolStripButton();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.oglasiListView = new System.Windows.Forms.ListView();
             this.naslovColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tekstOglasaColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.vrijemeObjaveColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -145,12 +145,12 @@
             this.osvjeziBtn.Text = "Освјежи листу";
             this.osvjeziBtn.Click += new System.EventHandler(this.osvjeziBtn_Click);
             // 
-            // listView1
+            // oglasiListView
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.oglasiListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.oglasiListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.naslovColHead,
             this.tekstOglasaColHead,
             this.vrijemeObjaveColHead});
@@ -160,23 +160,23 @@
             listViewGroup2.Name = "drugeAktivnostiListVG";
             listViewGroup3.Header = "Испит";
             listViewGroup3.Name = "ispitListVG";
-            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            this.oglasiListView.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
             listViewGroup1,
             listViewGroup2,
             listViewGroup3});
             listViewItem1.Group = listViewGroup1;
             listViewItem2.Group = listViewGroup1;
             listViewItem3.Group = listViewGroup2;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            this.oglasiListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2,
             listViewItem3});
-            this.listView1.Location = new System.Drawing.Point(0, 46);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(853, 437);
-            this.listView1.TabIndex = 27;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.oglasiListView.Location = new System.Drawing.Point(0, 46);
+            this.oglasiListView.Name = "oglasiListView";
+            this.oglasiListView.Size = new System.Drawing.Size(853, 437);
+            this.oglasiListView.TabIndex = 27;
+            this.oglasiListView.UseCompatibleStateImageBehavior = false;
+            this.oglasiListView.View = System.Windows.Forms.View.Details;
             // 
             // naslovColHead
             // 
@@ -198,7 +198,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(853, 482);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.oglasiListView);
             this.Controls.Add(this.toolStrip5);
             this.Controls.Add(this.toolStrip1);
             this.Name = "PrikazOglasa";
@@ -223,7 +223,7 @@
         private System.Windows.Forms.ToolStripButton izbrisiBtn;
         private System.Windows.Forms.ToolStripButton prikaziBtn;
         private System.Windows.Forms.ToolStripButton osvjeziBtn;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView oglasiListView;
         private System.Windows.Forms.ColumnHeader naslovColHead;
         private System.Windows.Forms.ColumnHeader tekstOglasaColHead;
         private System.Windows.Forms.ColumnHeader vrijemeObjaveColHead;

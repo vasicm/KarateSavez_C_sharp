@@ -32,13 +32,13 @@
             this.sacuvajBtn = new System.Windows.Forms.Button();
             this.zatvoriBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.adresaTxtBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.nazivTxtBox = new System.Windows.Forms.TextBox();
             this.datumPocetkaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.adresaTxtBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.organizatorComboBox = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -104,6 +104,26 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(484, 300);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // adresaTxtBox
+            // 
+            this.adresaTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.adresaTxtBox.Location = new System.Drawing.Point(174, 252);
+            this.adresaTxtBox.Name = "adresaTxtBox";
+            this.adresaTxtBox.Size = new System.Drawing.Size(307, 20);
+            this.adresaTxtBox.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 225);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(165, 75);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Адреса:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -156,29 +176,11 @@
             this.datumPocetkaDateTimePicker.Size = new System.Drawing.Size(307, 20);
             this.datumPocetkaDateTimePicker.TabIndex = 14;
             // 
-            // adresaTxtBox
-            // 
-            this.adresaTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.adresaTxtBox.Location = new System.Drawing.Point(174, 252);
-            this.adresaTxtBox.Name = "adresaTxtBox";
-            this.adresaTxtBox.Size = new System.Drawing.Size(307, 20);
-            this.adresaTxtBox.TabIndex = 18;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 225);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 75);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Адреса:";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // organizatorComboBox
             // 
             this.organizatorComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.organizatorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.organizatorComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.organizatorComboBox.FormattingEnabled = true;
             this.organizatorComboBox.Location = new System.Drawing.Point(174, 177);
             this.organizatorComboBox.Name = "organizatorComboBox";

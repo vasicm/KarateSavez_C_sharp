@@ -117,10 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="takmicariListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="takmicariListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 125</value>
+  </data>
+  <data name="takmicariListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 395</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="takmicariListView.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;takmicariListView.Name" xml:space="preserve">
+    <value>takmicariListView</value>
+  </data>
+  <data name="&gt;&gt;takmicariListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;takmicariListView.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;takmicariListView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="jmbColHead.Text" xml:space="preserve">
     <value>ЈМБ</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="jmbColHead.Width" type="System.Int32, mscorlib">
     <value>114</value>
   </data>
@@ -154,32 +180,6 @@
   <data name="datumRodjenjaColHead.Width" type="System.Int32, mscorlib">
     <value>127</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="takmicariListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="takmicariListView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 125</value>
-  </data>
-  <data name="takmicariListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 395</value>
-  </data>
-  <data name="takmicariListView.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;takmicariListView.Name" xml:space="preserve">
-    <value>takmicariListView</value>
-  </data>
-  <data name="&gt;&gt;takmicariListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;takmicariListView.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;takmicariListView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="button1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -210,6 +210,30 @@
   <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 25</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
   <data name="toolStripLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 22</value>
   </data>
@@ -240,45 +264,9 @@
   <data name="dbgLabel.Text" xml:space="preserve">
     <value>toolStripLabel7</value>
   </data>
-  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 25</value>
-  </data>
-  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <metadata name="toolStrip3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>227, 17</value>
   </metadata>
-  <data name="toolStripLabel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 22</value>
-  </data>
-  <data name="toolStripLabel5.Text" xml:space="preserve">
-    <value>Клуб:</value>
-  </data>
-  <data name="klubComboBox.Items" xml:space="preserve">
-    <value>сви</value>
-  </data>
-  <data name="klubComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 25</value>
-  </data>
   <data name="toolStrip3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 25</value>
   </data>
@@ -303,9 +291,45 @@
   <data name="&gt;&gt;toolStrip3.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="toolStripLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 22</value>
+  </data>
+  <data name="toolStripLabel5.Text" xml:space="preserve">
+    <value>Клуб:</value>
+  </data>
+  <data name="klubComboBox.Items" xml:space="preserve">
+    <value>сви</value>
+  </data>
+  <data name="klubComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
   <metadata name="toolStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>437, 17</value>
   </metadata>
+  <data name="toolStrip2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="toolStrip2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 25</value>
+  </data>
+  <data name="toolStrip2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="toolStrip2.Text" xml:space="preserve">
+    <value>toolStrip2</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Name" xml:space="preserve">
+    <value>toolStrip2</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStrip2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="toolStripLabel2.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 22</value>
   </data>
@@ -336,57 +360,9 @@
   <data name="kategorijaComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 25</value>
   </data>
-  <data name="toolStrip2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 50</value>
-  </data>
-  <data name="toolStrip2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 25</value>
-  </data>
-  <data name="toolStrip2.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="toolStrip2.Text" xml:space="preserve">
-    <value>toolStrip2</value>
-  </data>
-  <data name="&gt;&gt;toolStrip2.Name" xml:space="preserve">
-    <value>toolStrip2</value>
-  </data>
-  <data name="&gt;&gt;toolStrip2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStrip2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;toolStrip2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <metadata name="toolStrip4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>542, 17</value>
   </metadata>
-  <data name="toolStripLabel6.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="toolStripLabel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 22</value>
-  </data>
-  <data name="toolStripLabel6.Text" xml:space="preserve">
-    <value>Групиши по:</value>
-  </data>
-  <data name="grupisiPoComboBox.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="grupisiPoComboBox.Items" xml:space="preserve">
-    <value>Без бруписања</value>
-  </data>
-  <data name="grupisiPoComboBox.Items1" xml:space="preserve">
-    <value>Клубу</value>
-  </data>
-  <data name="grupisiPoComboBox.Items2" xml:space="preserve">
-    <value>Имену</value>
-  </data>
-  <data name="grupisiPoComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 25</value>
-  </data>
   <data name="toolStrip4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 75</value>
   </data>
@@ -410,6 +386,30 @@
   </data>
   <data name="&gt;&gt;toolStrip4.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="toolStripLabel6.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStripLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 22</value>
+  </data>
+  <data name="toolStripLabel6.Text" xml:space="preserve">
+    <value>Групиши по:</value>
+  </data>
+  <data name="grupisiPoComboBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="grupisiPoComboBox.Items" xml:space="preserve">
+    <value>Без бруписања</value>
+  </data>
+  <data name="grupisiPoComboBox.Items1" xml:space="preserve">
+    <value>Клубу</value>
+  </data>
+  <data name="grupisiPoComboBox.Items2" xml:space="preserve">
+    <value>Имену</value>
+  </data>
+  <data name="grupisiPoComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
   </data>
   <metadata name="toolStrip5.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>647, 17</value>
@@ -440,9 +440,6 @@
   </data>
   <data name="prikaziBtn.Text" xml:space="preserve">
     <value>Прикажи</value>
-  </data>
-  <data name="prijaviBtn.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="prijaviBtn.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>

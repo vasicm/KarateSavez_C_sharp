@@ -144,6 +144,33 @@ namespace KarateSavez.dao
             }
         }
 
+        public static long jmbTakmicara(string ime, string prezime)
+        {
+            string sqlTekstUpit = "select clan.jmb from clan where clan.ime like '" + ime + "' and clan.prezime like '" + prezime + "'";
+            long rezultat = 0;
+            MySqlConnection konekcija = null;
+            try
+            {
+                konekcija = Konekcija.kreirajKonekciju();
+                MySqlCommand upit = konekcija.CreateCommand();
+                upit.CommandText = sqlTekstUpit;
+                MySqlDataReader reader = upit.ExecuteReader();
+
+                reader.Read();
+                rezultat = Convert.ToInt64(reader["jmb"].ToString());
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Konekcija.zatvoriKonekciju(konekcija);
+            }
+            return rezultat;
+        }
+
         public static bool sadrzi(long jmb)
         {
             string sqlTekstUpit = "select count(clan.jmb) as broj from clan where clan.jmb = " + jmb;

@@ -42,6 +42,13 @@ namespace KarateSavez
             osvjezi();
         }
 
+        private void prijaviBtn_Click(object sender, EventArgs e)
+        {
+            PrijavaTakmicara dialog = new PrijavaTakmicara();
+            dialog.Jmb = Convert.ToInt64(takmicariListView.SelectedItems[0].SubItems[0].Text);
+            dialog.ShowDialog();
+            osvjezi();
+        }
 
         private void prikaziBtn_Click(object sender, EventArgs e)
         {
@@ -60,7 +67,7 @@ namespace KarateSavez
                         takmicariListView.SelectedItems[0].SubItems[3].Text
                     );
                 editovanjeTakicara.Clan = clan;
-                editovanjeTakicara.Show();
+                editovanjeTakicara.ShowDialog();
             }
             catch (IndexOutOfRangeException ioorEx)
             {
@@ -223,7 +230,6 @@ namespace KarateSavez
 
         private void pretragaTextBox_KeyUp(object sender, KeyEventArgs e)
         {
-            dbgLabel.Text = e.KeyData.ToString();
             if (e.KeyData == Keys.Enter)
             {
                 ArrayList clanovi = ClanDAO.clanoviImePrezime(pretragaTextBox.Text);
@@ -241,5 +247,6 @@ namespace KarateSavez
             this.Dock = DockStyle.Left;
             MessageBox.Show("Није имплементирано", "Обавјештење!", MessageBoxButtons.YesNo);
         }
+
     }
 }

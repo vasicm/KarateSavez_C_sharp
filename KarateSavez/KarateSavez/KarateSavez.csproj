@@ -53,8 +53,10 @@
     <Compile Include="dao\BorbaDAO.cs" />
     <Compile Include="dao\ClanDAO.cs" />
     <Compile Include="dao\KarateKlubDAO.cs" />
+    <Compile Include="dao\KategorijaDAO.cs" />
     <Compile Include="dao\Konekcija.cs" />
     <Compile Include="dao\OglasDAO.cs" />
+    <Compile Include="dao\PrijavaDAO.cs" />
     <Compile Include="dao\TakmicenjeDAO.cs" />
     <Compile Include="dto\Borba.cs" />
     <Compile Include="dto\Clan.cs" />
@@ -99,6 +101,12 @@
     <Compile Include="pocetnaForma.Designer.cs">
       <DependentUpon>pocetnaForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrijavaTakmicara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrijavaTakmicara.Designer.cs">
+      <DependentUpon>PrijavaTakmicara.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrikazOglasa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="pocetnaForma.resx">
       <DependentUpon>pocetnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrijavaTakmicara.resx">
+      <DependentUpon>PrijavaTakmicara.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrikazOglasa.resx">
       <DependentUpon>PrikazOglasa.cs</DependentUpon>

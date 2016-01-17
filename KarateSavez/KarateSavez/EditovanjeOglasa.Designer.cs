@@ -35,9 +35,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.nazivTxtBox = new System.Windows.Forms.TextBox();
-            this.datumPocetkaDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.naslovTxtBox = new System.Windows.Forms.TextBox();
+            this.datumOglasaDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.tekstOglasaRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.tipOglasaTxtBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -85,19 +87,21 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.45232F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 64.54768F));
+            this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.tipOglasaTxtBox, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.nazivTxtBox, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.datumPocetkaDateTimePicker, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBox1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.naslovTxtBox, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.datumOglasaDateTimePicker, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.tekstOglasaRichTextBox, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66833F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.995F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66833F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66833F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(426, 347);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -106,11 +110,11 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 259);
+            this.label2.Location = new System.Drawing.Point(3, 230);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 88);
+            this.label2.Size = new System.Drawing.Size(145, 57);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Организатор:";
+            this.label2.Text = "Датум објаве:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
@@ -118,7 +122,7 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 86);
+            this.label3.Location = new System.Drawing.Point(3, 57);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 173);
             this.label3.TabIndex = 3;
@@ -132,37 +136,57 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 86);
+            this.label1.Size = new System.Drawing.Size(145, 57);
             this.label1.TabIndex = 1;
             this.label1.Text = "Наслов огласа:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // nazivTxtBox
+            // naslovTxtBox
             // 
-            this.nazivTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.nazivTxtBox.Location = new System.Drawing.Point(154, 33);
-            this.nazivTxtBox.Name = "nazivTxtBox";
-            this.nazivTxtBox.Size = new System.Drawing.Size(269, 20);
-            this.nazivTxtBox.TabIndex = 13;
+            this.naslovTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.naslovTxtBox.Location = new System.Drawing.Point(154, 18);
+            this.naslovTxtBox.Name = "naslovTxtBox";
+            this.naslovTxtBox.Size = new System.Drawing.Size(269, 20);
+            this.naslovTxtBox.TabIndex = 13;
             // 
-            // datumPocetkaDateTimePicker
+            // datumOglasaDateTimePicker
             // 
-            this.datumPocetkaDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.datumPocetkaDateTimePicker.Location = new System.Drawing.Point(154, 293);
-            this.datumPocetkaDateTimePicker.Name = "datumPocetkaDateTimePicker";
-            this.datumPocetkaDateTimePicker.Size = new System.Drawing.Size(269, 20);
-            this.datumPocetkaDateTimePicker.TabIndex = 14;
+            this.datumOglasaDateTimePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.datumOglasaDateTimePicker.Location = new System.Drawing.Point(154, 248);
+            this.datumOglasaDateTimePicker.Name = "datumOglasaDateTimePicker";
+            this.datumOglasaDateTimePicker.Size = new System.Drawing.Size(269, 20);
+            this.datumOglasaDateTimePicker.TabIndex = 14;
             // 
-            // richTextBox1
+            // tekstOglasaRichTextBox
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tekstOglasaRichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(154, 89);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(269, 167);
-            this.richTextBox1.TabIndex = 16;
-            this.richTextBox1.Text = "";
+            this.tekstOglasaRichTextBox.Location = new System.Drawing.Point(154, 60);
+            this.tekstOglasaRichTextBox.Name = "tekstOglasaRichTextBox";
+            this.tekstOglasaRichTextBox.Size = new System.Drawing.Size(269, 167);
+            this.tekstOglasaRichTextBox.TabIndex = 16;
+            this.tekstOglasaRichTextBox.Text = "";
+            // 
+            // tipOglasaTxtBox
+            // 
+            this.tipOglasaTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tipOglasaTxtBox.Location = new System.Drawing.Point(154, 307);
+            this.tipOglasaTxtBox.Name = "tipOglasaTxtBox";
+            this.tipOglasaTxtBox.Size = new System.Drawing.Size(269, 20);
+            this.tipOglasaTxtBox.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(3, 287);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(145, 60);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Тип огласа:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // EditovanjeOglasa
             // 
@@ -188,8 +212,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox nazivTxtBox;
-        private System.Windows.Forms.DateTimePicker datumPocetkaDateTimePicker;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox naslovTxtBox;
+        private System.Windows.Forms.DateTimePicker datumOglasaDateTimePicker;
+        private System.Windows.Forms.RichTextBox tekstOglasaRichTextBox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox tipOglasaTxtBox;
     }
 }

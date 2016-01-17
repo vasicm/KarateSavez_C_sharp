@@ -286,9 +286,10 @@ namespace KarateSavez
             // 
             // prijaviBtn
             // 
-            resources.ApplyResources(this.prijaviBtn, "prijaviBtn");
             this.prijaviBtn.Image = global::KarateSavez.Properties.Resources.help1;
+            resources.ApplyResources(this.prijaviBtn, "prijaviBtn");
             this.prijaviBtn.Name = "prijaviBtn";
+            this.prijaviBtn.Click += new System.EventHandler(this.prijaviBtn_Click);
             // 
             // osvjeziBtn
             // 

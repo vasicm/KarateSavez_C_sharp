@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms;
 
 namespace KarateSavez.dto
 {
-    class Borba
+    class Borba : ListViewItem
     {
-        private string takmicenje;
+        private string nazivTakmicenja;
+        private DateTime datumTakmicenja;
         private string kategorija;
         private string plavi;
         private string crveni;
@@ -19,48 +21,50 @@ namespace KarateSavez.dto
         private int kazneCrveni;
         private int krug;
 
+        public void kreirajListViewItem()
+        {
+            base.Text = plavi;
+            base.SubItems.AddRange(new string[] {
+                                                    " "+poeniPlavi+":"+poeniCrveni+" ",
+                                                    crveni
+                                                }
+            );
+        }
+
         public void popuniObjekat(MySqlDataReader reader)
         {
-            //TODO
-            this.Takmicenje = reader["takmicenje"].ToString();
+            this.NazivTakmicenja = reader["nazivTakmicenja"].ToString();
+            DateTime.TryParse(reader["datumTakmicenja"].ToString(), out this.datumTakmicenja); 
             this.Kategorija = reader["kategorija"].ToString();
             this.Plavi = reader["plavi"].ToString();
             this.Crveni = reader["crveni"].ToString();
-            this.PoeniPlavi = Convert.ToInt32( reader["poeniPlavi"].ToString());
+            this.PoeniPlavi = Convert.ToInt32(reader["poeniPlavi"].ToString());
             this.PoeniCrveni = Convert.ToInt32(reader["poeniCrveni"].ToString());
-            this.KaznePlavi = Convert.ToInt32(reader["kaznePlavi"].ToString()); 
+            this.KaznePlavi = Convert.ToInt32(reader["KAZnePlavi"].ToString()); 
             this.KazneCrveni = Convert.ToInt32(reader["kazneCrveni"].ToString());
-            this.Krug = Convert.ToInt32(reader["krug"].ToString()); ;
+            this.Krug = Convert.ToInt32(reader["krug"].ToString());
+
+            this.kreirajListViewItem();
         }
 
         public Borba()
         {
         }
 
-        public Borba(string takmicenje, string kategorija, string plavi, string crveni, int poeniPlavi, int poeniCrveni, int kaznePlavi, int kazneCrveni, int krug)
+        public Borba(string nazivTakmicenja, DateTime datumTakmicenja, string kategorija, string plavi, string crveni, int poeniPlavi, int poeniCrveni, int kaznePlavi, int kazneCrveni, int krug)
         {
-            this.Takmicenje = takmicenje;
-            this.Kategorija = kategorija;
-            this.Plavi = plavi;
-            this.Crveni = crveni;
-            this.PoeniPlavi = poeniPlavi;
-            this.PoeniCrveni = poeniCrveni;
-            this.KaznePlavi = kaznePlavi;
-            this.KazneCrveni = kazneCrveni;
-            this.Krug = krug;
-        }
+            this.nazivTakmicenja = nazivTakmicenja;
+            this.datumTakmicenja = datumTakmicenja;
+            this.kategorija = kategorija;
+            this.plavi = plavi;
+            this.crveni = crveni;
+            this.poeniPlavi = poeniPlavi;
+            this.poeniCrveni = poeniCrveni;
+            this.kaznePlavi = kaznePlavi;
+            this.kazneCrveni = kazneCrveni;
+            this.krug = krug;
 
-        public string Takmicenje
-        {
-            get
-            {
-                return takmicenje;
-            }
-
-            set
-            {
-                takmicenje = value;
-            }
+            this.kreirajListViewItem();
         }
 
         public string Kategorija
@@ -167,6 +171,30 @@ namespace KarateSavez.dto
             }
         }
 
+        public string NazivTakmicenja
+        {
+            get
+            {
+                return nazivTakmicenja;
+            }
 
+            set
+            {
+                nazivTakmicenja = value;
+            }
+        }
+
+        public DateTime DatumTakmicenja
+        {
+            get
+            {
+                return datumTakmicenja;
+            }
+
+            set
+            {
+                datumTakmicenja = value;
+            }
+        }
     }
 }
