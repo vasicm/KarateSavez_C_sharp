@@ -85,6 +85,7 @@
             // 
             this.pretraziTextBox.Name = "pretraziTextBox";
             this.pretraziTextBox.Size = new System.Drawing.Size(150, 25);
+            this.pretraziTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.pretraziTextBox_KeyUp);
             // 
             // pretraziBtn
             // 
@@ -120,16 +121,16 @@
             // 
             // izbrisiBtn
             // 
-            this.izbrisiBtn.Image = global::KarateSavez.Properties.Resources.help;
+            this.izbrisiBtn.Image = global::KarateSavez.Properties.Resources.brisi;
             this.izbrisiBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.izbrisiBtn.Name = "izbrisiBtn";
-            this.izbrisiBtn.Size = new System.Drawing.Size(80, 22);
-            this.izbrisiBtn.Text = "Избриши";
+            this.izbrisiBtn.Size = new System.Drawing.Size(66, 22);
+            this.izbrisiBtn.Text = "Бриши";
             this.izbrisiBtn.Click += new System.EventHandler(this.izbrisiBtn_Click);
             // 
             // prikaziBtn
             // 
-            this.prikaziBtn.Image = global::KarateSavez.Properties.Resources.open;
+            this.prikaziBtn.Image = global::KarateSavez.Properties.Resources.prikaz;
             this.prikaziBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.prikaziBtn.Name = "prikaziBtn";
             this.prikaziBtn.Size = new System.Drawing.Size(78, 22);
@@ -172,6 +173,7 @@
             listViewItem2,
             listViewItem3});
             this.oglasiListView.Location = new System.Drawing.Point(0, 46);
+            this.oglasiListView.MultiSelect = false;
             this.oglasiListView.Name = "oglasiListView";
             this.oglasiListView.Size = new System.Drawing.Size(853, 437);
             this.oglasiListView.TabIndex = 27;
@@ -201,6 +203,7 @@
             this.Controls.Add(this.oglasiListView);
             this.Controls.Add(this.toolStrip5);
             this.Controls.Add(this.toolStrip1);
+            this.HelpButton = true;
             this.Name = "PrikazOglasa";
             this.Text = "PrikazOglasa";
             this.toolStrip1.ResumeLayout(false);

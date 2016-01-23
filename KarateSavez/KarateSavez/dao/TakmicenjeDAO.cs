@@ -105,6 +105,11 @@ namespace KarateSavez.dao
 
         public static bool brisi(int idTakmicenja)
         {
+
+            if (brojPrijavljenih(idTakmicenja) != 0)
+            {
+                return false;
+            }
             MySqlConnection konekcija = null;
             try
             {
@@ -150,6 +155,7 @@ namespace KarateSavez.dao
 
         public static ArrayList datumiSvi(string nazivTakmicenja)
         {
+            //DATE_FORMAT(takmicenje.DatumPocetka, '%d.%m.%Y')
             string sqlTekstUpit = "select takmicenje.DatumPocetka as ret"
             + " from takmicenje"
             + " where takmicenje.NazivTakmicenja = \""+nazivTakmicenja+"\"";
@@ -166,6 +172,36 @@ namespace KarateSavez.dao
             + " and takmicenje.NazivTakmicenja = \""+nazivTakmicenja+"\"";
             return listaStringova(sqlTekstUpit);
         }
+
+        public static int brojPrijavljenih(int idTakmicenja)
+        {
+            MySqlConnection konekcija = null;
+            int rezultat = 0;
+
+            try
+            {
+                konekcija = Konekcija.kreirajKonekciju();
+                MySqlCommand upit = konekcija.CreateCommand();
+                upit.CommandText = "select count(*) as rezultat"
+                    +" from ucesce_pojedinca where IDTakmicenja = " + idTakmicenja;
+
+                MySqlDataReader reader = upit.ExecuteReader();
+                reader.Read();
+                rezultat = Convert.ToInt32(reader["rezultat"].ToString());
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                Konekcija.zatvoriKonekciju(konekcija);
+            }
+
+            return rezultat;
+        }
+
 
         public static int idTakmicenja(string nazivTakmicenja, string datumTakmicenja)
         {

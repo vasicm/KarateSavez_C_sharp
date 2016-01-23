@@ -29,10 +29,6 @@ namespace KarateSavez
             this.takmicenjeComboBox.SelectedIndex = 0;
         }
 
-        private void zatvoriBtn_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Да ли сте сигурни?", "Питање!", MessageBoxButtons.YesNo) == DialogResult.Yes) this.Close();
-        }
         internal Borba Borba
         {
             get
@@ -79,7 +75,7 @@ namespace KarateSavez
                     Convert.ToInt32(krugNumericUpDown.Value)
                 );
 
-                if (BorbaDAO.dodaj(borba) == true) MessageBox.Show("Успјешно сте додали борбу у базу");
+                if (BorbaDAO.dodaj(borba) == true) this.Close();
                 else MessageBox.Show("Догодила се грешка приликом додавања борбе у базу");
             }
             else

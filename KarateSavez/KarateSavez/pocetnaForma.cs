@@ -37,33 +37,20 @@ namespace KarateSavez
         {
 
         }
-        
-        private void tmp1(object sender, EventArgs e)
-        {
-            PrikazBorbi takmicenjaDialog = new PrikazBorbi();
-            //takmicenjaDialog.Dock = DockStyle.Right;
-            takmicenjaDialog.MdiParent = this;
-            takmicenjaDialog.Show();
-        }
-
-        private void tmp2(object sender, EventArgs e)
-        {
-            PrikazTakmicara prikazTakicara = new PrikazTakmicara();
-            //prikazTakicara.Dock = DockStyle.Left;
-            prikazTakicara.MdiParent = this;
-            prikazTakicara.Show();
-        }
 
         private void oglasiStripBtn_Click(object sender, EventArgs e)
         {
+            zatvoriSveForme();
             PrikazOglasa forma = new PrikazOglasa();
             forma.MdiParent = this;
             forma.WindowState = FormWindowState.Maximized;
+
             forma.Show();
         }
 
         private void takmicenjaStripBtn_Click(object sender, EventArgs e)
         {
+            zatvoriSveForme();
             PrikazTakmicenja forma = new PrikazTakmicenja();
             forma.MdiParent = this;
             forma.WindowState = FormWindowState.Maximized;
@@ -72,6 +59,7 @@ namespace KarateSavez
 
         private void borbaStripBtn_Click(object sender, EventArgs e)
         {
+            zatvoriSveForme();
             PrikazBorbi forma = new PrikazBorbi();
             forma.MdiParent = this;
             forma.WindowState = FormWindowState.Maximized;
@@ -80,10 +68,91 @@ namespace KarateSavez
 
         private void takmicariStripBtn_Click(object sender, EventArgs e)
         {
+            zatvoriSveForme();
             PrikazTakmicara forma = new PrikazTakmicara();
             forma.MdiParent = this;
             forma.WindowState = FormWindowState.Maximized;
             forma.Show();
+        }
+
+        private void zatvoriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Да ли сте сигурни?", "Питање!", MessageBoxButtons.YesNo) == DialogResult.Yes) this.Close();
+        }
+
+        private void oglasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditovanjeOglasa dialog = new EditovanjeOglasa();
+            dialog.ShowDialog();
+        }
+
+        private void takmicarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditovanjeTakmicara editovanjeTakicara = new EditovanjeTakmicara();
+            editovanjeTakicara.ShowDialog();
+        }
+
+        private void takmicenjeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditovanjeTakmicenja dialog = new EditovanjeTakmicenja();
+            dialog.ShowDialog();
+        }
+
+        private void oglasaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrikazOglasa forma = new PrikazOglasa();
+            forma.Show();
+        }
+
+        private void takmicaraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrikazTakmicara forma = new PrikazTakmicara();
+            forma.WindowState = FormWindowState.Normal;
+            forma.Show();
+        }
+
+        private void takmicenjaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PrikazTakmicenja forma = new PrikazTakmicenja();
+            forma.Show();
+        }
+
+        private void zatvoriSveForme()
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                frm.Close();
+            }
+        }
+
+        private void temaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //TODO
+            MessageBox.Show("Није имплементирано", "Обавјештење!");
+        }
+
+        private void dodatnaPodesavanjaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //TODO
+            MessageBox.Show("Није имплементирано", "Обавјештење!");
+        }
+
+        private void uputstvoZaKoriscenjeAplikacijeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //TODO
+            MessageBox.Show("Није имплементирано", "Обавјештење!");
+        }
+
+        private void oAplikacijiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //TODO
+            MessageBox.Show("Није имплементирано", "Обавјештење!");
+        }
+
+        private void oKarateSavezuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //TODO
+            MessageBox.Show("Није имплементирано", "Обавјештење!");
         }
     }
 }

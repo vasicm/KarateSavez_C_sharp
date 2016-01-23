@@ -13,14 +13,26 @@ namespace KarateSavez.dao
     class OglasDAO
     {
         private static string SQL_OGLASI = "select * from oglas";
+        //select * from oglas where oglas.NaslovOglasa like '%к%'
+
         public static ArrayList oglasiSvi()
+        {
+            return oglasi(SQL_OGLASI);
+        }
+
+        public static ArrayList oglasiPoNaslovu(string naslovOglasa)
+        {
+            return oglasi(SQL_OGLASI + " where oglas.NaslovOglasa like '%"+naslovOglasa+"%'");
+        }
+
+        public static ArrayList oglasi(string sqlUpit)
         {
             MySqlConnection konekcija = null;
             ArrayList rezultat = new ArrayList();
             try { 
                 konekcija = Konekcija.kreirajKonekciju();
                 MySqlCommand upit = konekcija.CreateCommand();
-                upit.CommandText = SQL_OGLASI;
+                upit.CommandText = sqlUpit;
                 MySqlDataReader reader = upit.ExecuteReader();
                 while (reader.Read())
                 {

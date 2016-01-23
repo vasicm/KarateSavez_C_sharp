@@ -30,7 +30,6 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.sacuvajBtn = new System.Windows.Forms.Button();
-            this.zatvoriBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pojasComboBox = new System.Windows.Forms.ComboBox();
             this.jmbTxtBox = new System.Windows.Forms.TextBox();
@@ -51,7 +50,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.sacuvajBtn);
-            this.groupBox1.Controls.Add(this.zatvoriBtn);
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
@@ -63,23 +61,13 @@
             // 
             // sacuvajBtn
             // 
-            this.sacuvajBtn.Location = new System.Drawing.Point(247, 332);
+            this.sacuvajBtn.Location = new System.Drawing.Point(328, 333);
             this.sacuvajBtn.Name = "sacuvajBtn";
             this.sacuvajBtn.Size = new System.Drawing.Size(75, 23);
             this.sacuvajBtn.TabIndex = 2;
             this.sacuvajBtn.Text = "Сачувај";
             this.sacuvajBtn.UseVisualStyleBackColor = true;
             this.sacuvajBtn.Click += new System.EventHandler(this.sacuvajBtn_Click);
-            // 
-            // zatvoriBtn
-            // 
-            this.zatvoriBtn.Location = new System.Drawing.Point(328, 332);
-            this.zatvoriBtn.Name = "zatvoriBtn";
-            this.zatvoriBtn.Size = new System.Drawing.Size(75, 23);
-            this.zatvoriBtn.TabIndex = 1;
-            this.zatvoriBtn.Text = "Затвори";
-            this.zatvoriBtn.UseVisualStyleBackColor = true;
-            this.zatvoriBtn.Click += new System.EventHandler(this.zatvoriBtn_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -260,7 +248,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button zatvoriBtn;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;

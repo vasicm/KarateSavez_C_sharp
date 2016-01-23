@@ -31,24 +31,34 @@ namespace KarateSavez
 
         private void prikaziBtn_Click(object sender, EventArgs e)
         {
-            EditovanjeTakmicenja dialog = new EditovanjeTakmicenja();
-            dialog.Takmicenje = (Takmicenje)takmicenjaListView.SelectedItems[0];
-            dialog.ShowDialog();
-            popuniListu(TakmicenjeDAO.takmicenjaPretraga(pretraziTextBox.Text));
+            if (takmicenjaListView.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Морате селектовати такмичење које желите да прикажете", "Обајештење!");
+            }
+            else
+            { 
+                EditovanjeTakmicenja dialog = new EditovanjeTakmicenja();
+                dialog.Takmicenje = (Takmicenje)takmicenjaListView.SelectedItems[0];
+                dialog.ShowDialog();
+                popuniListu(TakmicenjeDAO.takmicenjaPretraga(pretraziTextBox.Text));
+            }
         }
 
         private void izbrisiBtn_Click(object sender, EventArgs e)
         {
-            Takmicenje takmicenje = (Takmicenje)takmicenjaListView.SelectedItems[0];
-            if (TakmicenjeDAO.brisi(takmicenje) == true)
+            if (takmicenjaListView.SelectedItems.Count == 0)
             {
-                MessageBox.Show("Успјешно сте избрисали такмичење "+ takmicenje.Naziv);
+                MessageBox.Show("Морате селектовати такмичење које желите да избришете", "Обајештење!");
             }
-            else
+            else if (MessageBox.Show("Да ли сте сигурни да желите да избришете селектовано такмичење?", "Да ли сте сигурни?", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("Дошло је до грешке приликом брисања такмичења " + takmicenje.Naziv);
+                Takmicenje takmicenje = (Takmicenje)takmicenjaListView.SelectedItems[0];
+                if (TakmicenjeDAO.brisi(takmicenje) == false)
+                {
+                    MessageBox.Show("Да бист избрисали такмичење " + takmicenje.Naziv + " морате одјавити све такмичаре", "Обајештење!");
+                }
+                popuniListu(TakmicenjeDAO.takmicenjaPretraga(pretraziTextBox.Text));
             }
-            popuniListu(TakmicenjeDAO.takmicenjaPretraga(pretraziTextBox.Text));
         }
 
         private void pretraziBtn_Click(object sender, EventArgs e)

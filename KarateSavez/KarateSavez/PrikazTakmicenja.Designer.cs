@@ -32,6 +32,7 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.pretraziTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.pretraziBtn = new System.Windows.Forms.ToolStripButton();
+            this.dbgLabel = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip5 = new System.Windows.Forms.ToolStrip();
             this.dodajBtn = new System.Windows.Forms.ToolStripButton();
             this.izbrisiBtn = new System.Windows.Forms.ToolStripButton();
@@ -41,7 +42,6 @@
             this.datumColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.organizatorColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.adresaColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dbgLabel = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1.SuspendLayout();
             this.toolStrip5.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +83,12 @@
             this.pretraziBtn.Text = "toolStripButton1";
             this.pretraziBtn.Click += new System.EventHandler(this.pretraziBtn_Click);
             // 
+            // dbgLabel
+            // 
+            this.dbgLabel.Name = "dbgLabel";
+            this.dbgLabel.Size = new System.Drawing.Size(86, 22);
+            this.dbgLabel.Text = "toolStripLabel2";
+            // 
             // toolStrip5
             // 
             this.toolStrip5.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -106,16 +112,16 @@
             // 
             // izbrisiBtn
             // 
-            this.izbrisiBtn.Image = global::KarateSavez.Properties.Resources.help;
+            this.izbrisiBtn.Image = global::KarateSavez.Properties.Resources.brisi;
             this.izbrisiBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.izbrisiBtn.Name = "izbrisiBtn";
-            this.izbrisiBtn.Size = new System.Drawing.Size(80, 22);
-            this.izbrisiBtn.Text = "Избриши";
+            this.izbrisiBtn.Size = new System.Drawing.Size(66, 22);
+            this.izbrisiBtn.Text = "Бриши";
             this.izbrisiBtn.Click += new System.EventHandler(this.izbrisiBtn_Click);
             // 
             // prikaziBtn
             // 
-            this.prikaziBtn.Image = global::KarateSavez.Properties.Resources.open;
+            this.prikaziBtn.Image = global::KarateSavez.Properties.Resources.prikaz;
             this.prikaziBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.prikaziBtn.Name = "prikaziBtn";
             this.prikaziBtn.Size = new System.Drawing.Size(78, 22);
@@ -160,12 +166,6 @@
             // 
             this.adresaColHead.Text = "Адреса";
             this.adresaColHead.Width = 147;
-            // 
-            // dbgLabel
-            // 
-            this.dbgLabel.Name = "dbgLabel";
-            this.dbgLabel.Size = new System.Drawing.Size(86, 22);
-            this.dbgLabel.Text = "toolStripLabel2";
             // 
             // PrikazTakmicenja
             // 

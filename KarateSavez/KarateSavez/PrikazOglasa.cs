@@ -26,8 +26,7 @@ namespace KarateSavez
 
         private void pretraziBtn_Click(object sender, EventArgs e)
         {
-            //TODO
-            MessageBox.Show("Није имплементирано", "Обавјештење!", MessageBoxButtons.YesNo);
+            popuniListu(OglasDAO.oglasiPoNaslovu(pretraziTextBox.Text));
         }
 
         private void osvjeziBtn_Click(object sender, EventArgs e)
@@ -37,30 +36,40 @@ namespace KarateSavez
 
         private void prikaziBtn_Click(object sender, EventArgs e)
         {
-            EditovanjeOglasa dialog = new EditovanjeOglasa();
-            dialog.Oglas = (Oglas)oglasiListView.SelectedItems[0];
-            dialog.ShowDialog();
+            if (oglasiListView.SelectedItems.Count == 0)
+            {
+                MessageBox.Show("Морате селектовати оглас који желите да избришете", "Обајештење!");
+            }
+            else
+            {
+                EditovanjeOglasa dialog = new EditovanjeOglasa();
+                dialog.Oglas = (Oglas)oglasiListView.SelectedItems[0];
+                dialog.ShowDialog();
+                popuniListu(OglasDAO.oglasiSvi());
+            }
         }
 
         private void izbrisiBtn_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Да ли сте сигурни да желите да избришете селектовани оглас?", "Питање!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (oglasiListView.SelectedItems.Count == 0)
             {
-                if (OglasDAO.brisi((Oglas)oglasiListView.SelectedItems[0]) == true)
+                MessageBox.Show("Морате селектовати оглас који желите да избришете", "Обајештење!");
+            }
+            else if (MessageBox.Show("Да ли сте сигурни да желите да избришете селектовани оглас?", "Да ли сте сигурни?", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                if (OglasDAO.brisi((Oglas)oglasiListView.SelectedItems[0]) == false)
                 {
-                    MessageBox.Show("Успјешно сте избрисали оглас");
-                }
-                else
-                {
-                    MessageBox.Show("Брисање није успјело");
+                    MessageBox.Show("Брисање није успјело", "Грешка!");
                 }
             }
+            popuniListu(OglasDAO.oglasiSvi());
         }
 
         private void dodajBtn_Click(object sender, EventArgs e)
         {
             EditovanjeOglasa dialog = new EditovanjeOglasa();
             dialog.ShowDialog();
+            popuniListu(OglasDAO.oglasiSvi());
         }
 
         private void popuniListu(ArrayList oglasi)
@@ -77,6 +86,14 @@ namespace KarateSavez
                 }
                 oglas.Group = grupe[oglas.TipOglasa];
                 oglasiListView.Items.Add(oglas);
+            }
+        }
+
+        private void pretraziTextBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                popuniListu(OglasDAO.oglasiPoNaslovu(pretraziTextBox.Text));
             }
         }
     }

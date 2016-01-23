@@ -19,7 +19,16 @@ namespace KarateSavez
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            MessageBoxManager.OK = "У реду";
+            MessageBoxManager.Yes = "Да";
+            MessageBoxManager.No = "Не";
+            MessageBoxManager.Cancel = "Одустани";
+            MessageBoxManager.Register();
+
             Application.Run(new pocetnaForma());
+
+            MessageBoxManager.Unregister();
         }
     }
 }

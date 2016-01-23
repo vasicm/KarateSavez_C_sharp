@@ -80,7 +80,7 @@ namespace KarateSavez
         private void prijaviBtn_Click(object sender, EventArgs e)
         {
             string[] datum = datumComboBox.SelectedItem.ToString().Split(' ')[0].Split('/');
-            if (PrijavaDAO.prijavi(jmb, takmicenjeComboBox.SelectedItem.ToString(), datum[2] + datum[1] + datum[0], kategorijaComboBox.SelectedItem.ToString()) == true) MessageBox.Show("Успјешно сте пријавили такмичара");
+            if (PrijavaDAO.prijavi(jmb, takmicenjeComboBox.SelectedItem.ToString(), datum[2] + datum[1] + datum[0], kategorijaComboBox.SelectedItem.ToString()) == true) this.Close();
             else MessageBox.Show("Догодила се грешка приликом пријаве такмичара");
         }
     }

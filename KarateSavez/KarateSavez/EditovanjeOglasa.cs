@@ -44,17 +44,21 @@ namespace KarateSavez
 
         private void sacuvajBtn_Click(object sender, EventArgs e)
         {
+            string naslovOglasa = naslovTxtBox.Text;
+            string tekstOglasa = tekstOglasaRichTextBox.Text;
+            string tipOglasas = tipOglasaTxtBox.Text;
+
+            if (naslovOglasa.Equals("") || tekstOglasa.Equals("") || tipOglasas.Equals(""))
+            {
+                MessageBox.Show("Морате попунити сва поља", "Обајвештење!");
+                return;
+            }
+
             if (oglas == null)
             {
                 Oglas oglas = new Oglas(0, naslovTxtBox.Text, tekstOglasaRichTextBox.Text, datumOglasaDateTimePicker.Value, tipOglasaTxtBox.Text);
-                if (OglasDAO.dodaj(oglas) == true)
-                {
-                    MessageBox.Show("Успјешно сте додали оглас");
-                }
-                else
-                {
-                    MessageBox.Show("Додавање није успјело");
-                }
+                if (OglasDAO.dodaj(oglas) == true) this.Close();
+                else MessageBox.Show("Додавање није успјело", "Грешка!");
             }
             else
             {
@@ -63,20 +67,10 @@ namespace KarateSavez
                 oglas.DatumOglasa = datumOglasaDateTimePicker.Value;
                 oglas.TipOglasa = tipOglasaTxtBox.Text;
 
-                if (OglasDAO.azuriraj(oglas) == true)
-                {
-                    MessageBox.Show("Успјешно сте ажурирали оглас");
-                }
-                else
-                {
-                    MessageBox.Show("Ажурирање није успјело");
-                }
+                if (OglasDAO.azuriraj(oglas) == true) this.Close();
+                else MessageBox.Show("Ажурирање није успјело", "Грешка!");
             }
         }
 
-        private void zatvoriBtn_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Да ли сте сигурни?", "Питање!", MessageBoxButtons.YesNo) == DialogResult.Yes) this.Close();
-        }
     }
 }

@@ -95,6 +95,7 @@
     <Compile Include="EditovanjeTakmicenja.Designer.cs">
       <DependentUpon>EditovanjeTakmicenja.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageBoxManager.cs" />
     <Compile Include="pocetnaForma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -217,6 +218,17 @@
     <Content Include="icons\search.png" />
     <Content Include="icons\shutdown.png" />
     <Content Include="icons\undo.png" />
+    <None Include="Resources\odjava.png" />
+    <None Include="Resources\prijava.png" />
+    <None Include="Resources\prikaz.png" />
+    <None Include="Resources\brisi.jpg" />
+    <None Include="Resources\oglasi2.png" />
+    <None Include="Resources\takmicar2.png" />
+    <None Include="Resources\borba2.png" />
+    <None Include="Resources\takmicenja2.png" />
+    <None Include="Resources\takmicar.png" />
+    <None Include="Resources\borba.png" />
+    <None Include="Resources\takmicenja.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

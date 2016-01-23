@@ -70,6 +70,7 @@ namespace KarateSavez
             }
 
             Clan clan = new Clan(jmb, ime,prezime, pojas, datumRodjenja, klub);
+
             if (ClanDAO.sadrzi(jmb))
             {
                 rezultat = ClanDAO.azuriraj(clan);
@@ -78,14 +79,10 @@ namespace KarateSavez
             {
                 rezultat = ClanDAO.dodaj(clan);
             }
-            if (rezultat)
-            {
-                MessageBox.Show("Такмичар је успјешно додан у базу", "Обавјештење!", MessageBoxButtons.YesNo);
-            }
-            else
-            {
-                MessageBox.Show("Догодила се грешка", "Обавјештење!", MessageBoxButtons.YesNo);
-            }
+
+            if (rezultat) this.Close();
+            else MessageBox.Show("Догодила се грешка", "Обавјештење!", MessageBoxButtons.YesNo);
+
             return;
         }
 

@@ -39,13 +39,19 @@ namespace KarateSavez
                 adresaTxtBox.Text = takmicenje.Adresa;
             }
         }
-        private void zatvoriBtn_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Да ли сте сигурни?", "Питање!", MessageBoxButtons.YesNo) == DialogResult.Yes) this.Close();
-        }
 
         private void sacuvajBtn_Click(object sender, EventArgs e)
         {
+            string nazivTakmicenja = nazivTxtBox.Text;
+            object organizator = organizatorComboBox.SelectedItem;
+            string adresa = adresaTxtBox.Text;
+
+            if (nazivTakmicenja.Equals("") || organizator == null || adresa.Equals(""))
+            {
+                MessageBox.Show("Морате попунити сва поља", "Обајвештење!");
+                return;
+            }
+
             if (Takmicenje == null)
             {
                 Takmicenje = new Takmicenje(
@@ -55,8 +61,8 @@ namespace KarateSavez
                     organizatorComboBox.SelectedItem.ToString(),
                     adresaTxtBox.Text
                 );
-                if (TakmicenjeDAO.dodaj(Takmicenje) == true) MessageBox.Show("Успјешно сте додали такмичара у базу");
-                else MessageBox.Show("Догодила се грешка приликом додавања такмичара у базу");
+                if (TakmicenjeDAO.dodaj(Takmicenje) == true) this.Close();
+                else MessageBox.Show("Додавање није успјело", "Грешка!");
             }
             else
             {
@@ -65,8 +71,8 @@ namespace KarateSavez
                 takmicenje.Organizator = organizatorComboBox.SelectedItem.ToString();
                 takmicenje.Adresa = adresaTxtBox.Text;
 
-                if (TakmicenjeDAO.azuriraj(Takmicenje) == true) MessageBox.Show("Успјешно сте ажурирали такмичара у базу");
-                else MessageBox.Show("Догодила се грешка приликом ажурирања");
+                if (TakmicenjeDAO.azuriraj(Takmicenje) == true) this.Close();
+                else MessageBox.Show("Ажурирање није успјело", "Грешка!");
             }
         }
     }

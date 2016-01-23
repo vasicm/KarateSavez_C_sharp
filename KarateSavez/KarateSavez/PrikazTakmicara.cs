@@ -42,14 +42,6 @@ namespace KarateSavez
             osvjezi();
         }
 
-        private void prijaviBtn_Click(object sender, EventArgs e)
-        {
-            PrijavaTakmicara dialog = new PrijavaTakmicara();
-            dialog.Jmb = Convert.ToInt64(takmicariListView.SelectedItems[0].SubItems[0].Text);
-            dialog.ShowDialog();
-            osvjezi();
-        }
-
         private void prikaziBtn_Click(object sender, EventArgs e)
         {
             EditovanjeTakmicara editovanjeTakicara = new EditovanjeTakmicara();
@@ -248,5 +240,25 @@ namespace KarateSavez
             MessageBox.Show("Није имплементирано", "Обавјештење!", MessageBoxButtons.YesNo);
         }
 
+        private void prijaviBtn_Click(object sender, EventArgs e)
+        {
+            PrijavaTakmicara dialog = new PrijavaTakmicara();
+            dialog.Jmb = Convert.ToInt64(takmicariListView.SelectedItems[0].SubItems[0].Text);
+            dialog.ShowDialog();
+            osvjezi();
+        }
+
+        private void odjaviBtn_Click(object sender, EventArgs e)
+        {
+            if (kategorijaComboBox.Enabled && takmicariListView.SelectedItems.Count != 0)
+            {
+                string[] datum = datumComboBox.SelectedItem.ToString().Split(' ')[0].Split('/');
+                if (PrijavaDAO.odjavi(Convert.ToInt64(takmicariListView.SelectedItems[0].SubItems[0].Text), takmicenjeComboBox.SelectedItem.ToString(), datum[2] + datum[1] + datum[0], kategorijaComboBox.SelectedItem.ToString()) == false)
+                {
+                    MessageBox.Show("Такмичар се не може одјавити са такмичења јер је такмичење почело");
+                }
+                osvjezi();
+            }
+        }
     }
 }

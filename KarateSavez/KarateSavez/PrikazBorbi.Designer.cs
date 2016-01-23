@@ -28,15 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Први круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Други круг", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Трећи круг", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Први круг", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Други круг", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Трећи круг", System.Windows.Forms.HorizontalAlignment.Left);
             this.borbeListView = new System.Windows.Forms.ListView();
             this.plaviColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.rezultatColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.crveniColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.zatvoriBtn = new System.Windows.Forms.Button();
-            this.pomocBtn = new System.Windows.Forms.Button();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.takmicenjeComboBox = new System.Windows.Forms.ToolStripComboBox();
@@ -55,24 +53,27 @@
             // 
             // borbeListView
             // 
+            this.borbeListView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.borbeListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.plaviColHead,
             this.rezultatColHead,
             this.crveniColHead});
-            this.borbeListView.Dock = System.Windows.Forms.DockStyle.Top;
-            listViewGroup1.Header = "Први круг";
-            listViewGroup1.Name = "prviKrugListVG";
-            listViewGroup2.Header = "Други круг";
-            listViewGroup2.Name = "drugiKrugListVG";
-            listViewGroup3.Header = "Трећи круг";
-            listViewGroup3.Name = "treciKrugListVG";
+            this.borbeListView.FullRowSelect = true;
+            listViewGroup4.Header = "Први круг";
+            listViewGroup4.Name = "prviKrugListVG";
+            listViewGroup5.Header = "Други круг";
+            listViewGroup5.Name = "drugiKrugListVG";
+            listViewGroup6.Header = "Трећи круг";
+            listViewGroup6.Name = "treciKrugListVG";
             this.borbeListView.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2,
-            listViewGroup3});
+            listViewGroup4,
+            listViewGroup5,
+            listViewGroup6});
             this.borbeListView.Location = new System.Drawing.Point(0, 50);
             this.borbeListView.Name = "borbeListView";
-            this.borbeListView.Size = new System.Drawing.Size(764, 268);
+            this.borbeListView.Size = new System.Drawing.Size(764, 323);
             this.borbeListView.TabIndex = 2;
             this.borbeListView.UseCompatibleStateImageBehavior = false;
             this.borbeListView.View = System.Windows.Forms.View.Details;
@@ -91,30 +92,6 @@
             // 
             this.crveniColHead.Text = "Црвени";
             this.crveniColHead.Width = 279;
-            // 
-            // zatvoriBtn
-            // 
-            this.zatvoriBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.zatvoriBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.zatvoriBtn.Location = new System.Drawing.Point(677, 327);
-            this.zatvoriBtn.Name = "zatvoriBtn";
-            this.zatvoriBtn.Size = new System.Drawing.Size(75, 23);
-            this.zatvoriBtn.TabIndex = 3;
-            this.zatvoriBtn.Text = "Затвори";
-            this.zatvoriBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.zatvoriBtn.UseVisualStyleBackColor = true;
-            this.zatvoriBtn.Click += new System.EventHandler(this.zatvoriBtn_Click);
-            // 
-            // pomocBtn
-            // 
-            this.pomocBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pomocBtn.Location = new System.Drawing.Point(596, 327);
-            this.pomocBtn.Name = "pomocBtn";
-            this.pomocBtn.Size = new System.Drawing.Size(75, 23);
-            this.pomocBtn.TabIndex = 4;
-            this.pomocBtn.Text = "Помоћ";
-            this.pomocBtn.UseVisualStyleBackColor = true;
-            this.pomocBtn.Click += new System.EventHandler(this.pomocBtn_Click);
             // 
             // toolStrip2
             // 
@@ -194,16 +171,16 @@
             // 
             // izbrisiBtn
             // 
-            this.izbrisiBtn.Image = global::KarateSavez.Properties.Resources.help;
+            this.izbrisiBtn.Image = global::KarateSavez.Properties.Resources.brisi;
             this.izbrisiBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.izbrisiBtn.Name = "izbrisiBtn";
-            this.izbrisiBtn.Size = new System.Drawing.Size(80, 22);
-            this.izbrisiBtn.Text = "Избриши";
+            this.izbrisiBtn.Size = new System.Drawing.Size(66, 22);
+            this.izbrisiBtn.Text = "Бриши";
             this.izbrisiBtn.Click += new System.EventHandler(this.izbrisiBtn_Click);
             // 
             // prikaziBtn
             // 
-            this.prikaziBtn.Image = global::KarateSavez.Properties.Resources.open;
+            this.prikaziBtn.Image = global::KarateSavez.Properties.Resources.prikaz;
             this.prikaziBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.prikaziBtn.Name = "prikaziBtn";
             this.prikaziBtn.Size = new System.Drawing.Size(78, 22);
@@ -224,12 +201,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 373);
-            this.ControlBox = false;
             this.Controls.Add(this.borbeListView);
             this.Controls.Add(this.toolStrip5);
             this.Controls.Add(this.toolStrip2);
-            this.Controls.Add(this.pomocBtn);
-            this.Controls.Add(this.zatvoriBtn);
             this.Name = "PrikazBorbi";
             this.Text = "Такмичења";
             this.toolStrip2.ResumeLayout(false);
@@ -243,8 +217,6 @@
 
         #endregion
         private System.Windows.Forms.ListView borbeListView;
-        private System.Windows.Forms.Button zatvoriBtn;
-        private System.Windows.Forms.Button pomocBtn;
         private System.Windows.Forms.ColumnHeader plaviColHead;
         private System.Windows.Forms.ColumnHeader rezultatColHead;
         private System.Windows.Forms.ColumnHeader crveniColHead;

@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pocetnaForma));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.новиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.огласToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.такмичарToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.такмичењеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.прегледToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.такмичењаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.такмичењаToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.noviToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oglasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.takmicarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.takmicenjeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pregledToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oglasaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.takmicaraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.takmicenjaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.затвориToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.подешавањаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.темаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.додатнаПодешавањаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.помоћToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zatvoriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.podesavanjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.temaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dodatnaPodesavanjaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oAplikacijiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.оКаратеСавезуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.упутстоЗаКоришћењеАпликацијеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oKarateSavezuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uputstvoZaKoriscenjeAplikacijeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.oglasiStripBtn = new System.Windows.Forms.ToolStripButton();
             this.takmicenjaStripBtn = new System.Windows.Forms.ToolStripButton();
@@ -54,6 +54,7 @@
             this.takmicariStripBtn = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -64,134 +65,168 @@
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.подешавањаToolStripMenuItem,
-            this.помоћToolStripMenuItem});
+            this.podesavanjaToolStripMenuItem,
+            this.pomocToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(892, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(942, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.новиToolStripMenuItem,
-            this.прегледToolStripMenuItem,
+            this.noviToolStripMenuItem,
+            this.pregledToolStripMenuItem,
             this.toolStripSeparator1,
-            this.затвориToolStripMenuItem});
+            this.zatvoriToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.fileToolStripMenuItem.Text = "Фајл";
             this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
-            // новиToolStripMenuItem
+            // noviToolStripMenuItem
             // 
-            this.новиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.огласToolStripMenuItem,
-            this.такмичарToolStripMenuItem,
-            this.такмичењеToolStripMenuItem});
-            this.новиToolStripMenuItem.Name = "новиToolStripMenuItem";
-            this.новиToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.новиToolStripMenuItem.Text = "Нови...";
+            this.noviToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.oglasToolStripMenuItem,
+            this.takmicarToolStripMenuItem,
+            this.takmicenjeToolStripMenuItem});
+            this.noviToolStripMenuItem.Name = "noviToolStripMenuItem";
+            this.noviToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.noviToolStripMenuItem.Text = "Нови...";
             // 
-            // огласToolStripMenuItem
+            // oglasToolStripMenuItem
             // 
-            this.огласToolStripMenuItem.Name = "огласToolStripMenuItem";
-            this.огласToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.огласToolStripMenuItem.Text = "Оглас";
+            this.oglasToolStripMenuItem.Name = "oglasToolStripMenuItem";
+            this.oglasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.O)));
+            this.oglasToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.oglasToolStripMenuItem.Text = "Оглас";
+            this.oglasToolStripMenuItem.Click += new System.EventHandler(this.oglasToolStripMenuItem_Click);
             // 
-            // такмичарToolStripMenuItem
+            // takmicarToolStripMenuItem
             // 
-            this.такмичарToolStripMenuItem.Name = "такмичарToolStripMenuItem";
-            this.такмичарToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.такмичарToolStripMenuItem.Text = "Такмичар";
+            this.takmicarToolStripMenuItem.Name = "takmicarToolStripMenuItem";
+            this.takmicarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.T)));
+            this.takmicarToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.takmicarToolStripMenuItem.Text = "Такмичар";
+            this.takmicarToolStripMenuItem.Click += new System.EventHandler(this.takmicarToolStripMenuItem_Click);
             // 
-            // такмичењеToolStripMenuItem
+            // takmicenjeToolStripMenuItem
             // 
-            this.такмичењеToolStripMenuItem.Name = "такмичењеToolStripMenuItem";
-            this.такмичењеToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.такмичењеToolStripMenuItem.Text = "Такмичење";
+            this.takmicenjeToolStripMenuItem.Name = "takmicenjeToolStripMenuItem";
+            this.takmicenjeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.C)));
+            this.takmicenjeToolStripMenuItem.Size = new System.Drawing.Size(212, 22);
+            this.takmicenjeToolStripMenuItem.Text = "Такмичење";
+            this.takmicenjeToolStripMenuItem.Click += new System.EventHandler(this.takmicenjeToolStripMenuItem_Click);
             // 
-            // прегледToolStripMenuItem
+            // pregledToolStripMenuItem
             // 
-            this.прегледToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.такмичењаToolStripMenuItem,
-            this.такмичењаToolStripMenuItem1});
-            this.прегледToolStripMenuItem.Name = "прегледToolStripMenuItem";
-            this.прегледToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.прегледToolStripMenuItem.Text = "Преглед";
+            this.pregledToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.oglasaToolStripMenuItem,
+            this.takmicaraToolStripMenuItem,
+            this.takmicenjaToolStripMenuItem1});
+            this.pregledToolStripMenuItem.Name = "pregledToolStripMenuItem";
+            this.pregledToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.pregledToolStripMenuItem.Text = "Преглед...";
             // 
-            // такмичењаToolStripMenuItem
+            // oglasaToolStripMenuItem
             // 
-            this.такмичењаToolStripMenuItem.Name = "такмичењаToolStripMenuItem";
-            this.такмичењаToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.такмичењаToolStripMenuItem.Text = "Такмичара";
+            this.oglasaToolStripMenuItem.Name = "oglasaToolStripMenuItem";
+            this.oglasaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.A)));
+            this.oglasaToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.oglasaToolStripMenuItem.Text = "Огласа";
+            this.oglasaToolStripMenuItem.Click += new System.EventHandler(this.oglasaToolStripMenuItem_Click);
             // 
-            // такмичењаToolStripMenuItem1
+            // takmicaraToolStripMenuItem
             // 
-            this.такмичењаToolStripMenuItem1.Name = "такмичењаToolStripMenuItem1";
-            this.такмичењаToolStripMenuItem1.Size = new System.Drawing.Size(138, 22);
-            this.такмичењаToolStripMenuItem1.Text = "Такмичења";
+            this.takmicaraToolStripMenuItem.Name = "takmicaraToolStripMenuItem";
+            this.takmicaraToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.S)));
+            this.takmicaraToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.takmicaraToolStripMenuItem.Text = "Такмичара";
+            this.takmicaraToolStripMenuItem.Click += new System.EventHandler(this.takmicaraToolStripMenuItem_Click);
+            // 
+            // takmicenjaToolStripMenuItem1
+            // 
+            this.takmicenjaToolStripMenuItem1.Name = "takmicenjaToolStripMenuItem1";
+            this.takmicenjaToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.D)));
+            this.takmicenjaToolStripMenuItem1.Size = new System.Drawing.Size(203, 22);
+            this.takmicenjaToolStripMenuItem1.Text = "Такмичења";
+            this.takmicenjaToolStripMenuItem1.Click += new System.EventHandler(this.takmicenjaToolStripMenuItem1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(125, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(167, 6);
             // 
-            // затвориToolStripMenuItem
+            // zatvoriToolStripMenuItem
             // 
-            this.затвориToolStripMenuItem.Name = "затвориToolStripMenuItem";
-            this.затвориToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
-            this.затвориToolStripMenuItem.Text = "Затвори...";
+            this.zatvoriToolStripMenuItem.Name = "zatvoriToolStripMenuItem";
+            this.zatvoriToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.zatvoriToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.zatvoriToolStripMenuItem.Text = "Затвори...";
+            this.zatvoriToolStripMenuItem.Click += new System.EventHandler(this.zatvoriToolStripMenuItem_Click);
             // 
-            // подешавањаToolStripMenuItem
+            // podesavanjaToolStripMenuItem
             // 
-            this.подешавањаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.темаToolStripMenuItem,
-            this.додатнаПодешавањаToolStripMenuItem});
-            this.подешавањаToolStripMenuItem.Name = "подешавањаToolStripMenuItem";
-            this.подешавањаToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
-            this.подешавањаToolStripMenuItem.Text = "Подешавања";
+            this.podesavanjaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.temaToolStripMenuItem,
+            this.dodatnaPodesavanjaToolStripMenuItem});
+            this.podesavanjaToolStripMenuItem.Name = "podesavanjaToolStripMenuItem";
+            this.podesavanjaToolStripMenuItem.Size = new System.Drawing.Size(92, 20);
+            this.podesavanjaToolStripMenuItem.Text = "Подешавања";
             // 
-            // темаToolStripMenuItem
+            // temaToolStripMenuItem
             // 
-            this.темаToolStripMenuItem.Name = "темаToolStripMenuItem";
-            this.темаToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.темаToolStripMenuItem.Text = "Тема";
+            this.temaToolStripMenuItem.Name = "temaToolStripMenuItem";
+            this.temaToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.temaToolStripMenuItem.Text = "Тема";
+            this.temaToolStripMenuItem.Click += new System.EventHandler(this.temaToolStripMenuItem_Click);
             // 
-            // додатнаПодешавањаToolStripMenuItem
+            // dodatnaPodesavanjaToolStripMenuItem
             // 
-            this.додатнаПодешавањаToolStripMenuItem.Name = "додатнаПодешавањаToolStripMenuItem";
-            this.додатнаПодешавањаToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
-            this.додатнаПодешавањаToolStripMenuItem.Text = "Додатна подешавања";
+            this.dodatnaPodesavanjaToolStripMenuItem.Name = "dodatnaPodesavanjaToolStripMenuItem";
+            this.dodatnaPodesavanjaToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
+            this.dodatnaPodesavanjaToolStripMenuItem.Text = "Додатна подешавања";
+            this.dodatnaPodesavanjaToolStripMenuItem.Click += new System.EventHandler(this.dodatnaPodesavanjaToolStripMenuItem_Click);
             // 
-            // помоћToolStripMenuItem
+            // pomocToolStripMenuItem
             // 
-            this.помоћToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pomocToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uputstvoZaKoriscenjeAplikacijeToolStripMenuItem,
+            this.toolStripSeparator2,
             this.oAplikacijiToolStripMenuItem,
-            this.оКаратеСавезуToolStripMenuItem,
-            this.упутстоЗаКоришћењеАпликацијеToolStripMenuItem});
-            this.помоћToolStripMenuItem.Name = "помоћToolStripMenuItem";
-            this.помоћToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.помоћToolStripMenuItem.Text = "Помоћ";
+            this.oKarateSavezuToolStripMenuItem});
+            this.pomocToolStripMenuItem.Name = "pomocToolStripMenuItem";
+            this.pomocToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.pomocToolStripMenuItem.Text = "Помоћ";
             // 
             // oAplikacijiToolStripMenuItem
             // 
             this.oAplikacijiToolStripMenuItem.Name = "oAplikacijiToolStripMenuItem";
-            this.oAplikacijiToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
+            this.oAplikacijiToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
             this.oAplikacijiToolStripMenuItem.Text = "О апликацији";
+            this.oAplikacijiToolStripMenuItem.Click += new System.EventHandler(this.oAplikacijiToolStripMenuItem_Click);
             // 
-            // оКаратеСавезуToolStripMenuItem
+            // oKarateSavezuToolStripMenuItem
             // 
-            this.оКаратеСавезуToolStripMenuItem.Name = "оКаратеСавезуToolStripMenuItem";
-            this.оКаратеСавезуToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
-            this.оКаратеСавезуToolStripMenuItem.Text = "О карате савезу";
+            this.oKarateSavezuToolStripMenuItem.Name = "oKarateSavezuToolStripMenuItem";
+            this.oKarateSavezuToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.oKarateSavezuToolStripMenuItem.Text = "О карате савезу";
+            this.oKarateSavezuToolStripMenuItem.Click += new System.EventHandler(this.oKarateSavezuToolStripMenuItem_Click);
             // 
-            // упутстоЗаКоришћењеАпликацијеToolStripMenuItem
+            // uputstvoZaKoriscenjeAplikacijeToolStripMenuItem
             // 
-            this.упутстоЗаКоришћењеАпликацијеToolStripMenuItem.Name = "упутстоЗаКоришћењеАпликацијеToolStripMenuItem";
-            this.упутстоЗаКоришћењеАпликацијеToolStripMenuItem.Size = new System.Drawing.Size(266, 22);
-            this.упутстоЗаКоришћењеАпликацијеToolStripMenuItem.Text = "Упутсто за коришћење апликације";
+            this.uputstvoZaKoriscenjeAplikacijeToolStripMenuItem.Name = "uputstvoZaKoriscenjeAplikacijeToolStripMenuItem";
+            this.uputstvoZaKoriscenjeAplikacijeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.uputstvoZaKoriscenjeAplikacijeToolStripMenuItem.Size = new System.Drawing.Size(285, 22);
+            this.uputstvoZaKoriscenjeAplikacijeToolStripMenuItem.Text = "Упутсто за коришћење апликације";
+            this.uputstvoZaKoriscenjeAplikacijeToolStripMenuItem.Click += new System.EventHandler(this.uputstvoZaKoriscenjeAplikacijeToolStripMenuItem_Click);
             // 
             // toolStrip1
             // 
@@ -202,46 +237,50 @@
             this.takmicariStripBtn});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(892, 26);
+            this.toolStrip1.Size = new System.Drawing.Size(942, 96);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // oglasiStripBtn
             // 
             this.oglasiStripBtn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.oglasiStripBtn.Image = ((System.Drawing.Image)(resources.GetObject("oglasiStripBtn.Image")));
+            this.oglasiStripBtn.Image = global::KarateSavez.Properties.Resources.oglasi2;
+            this.oglasiStripBtn.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.oglasiStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.oglasiStripBtn.Name = "oglasiStripBtn";
             this.oglasiStripBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.oglasiStripBtn.Size = new System.Drawing.Size(73, 23);
+            this.oglasiStripBtn.Size = new System.Drawing.Size(140, 93);
             this.oglasiStripBtn.Text = "Огласи";
             this.oglasiStripBtn.Click += new System.EventHandler(this.oglasiStripBtn_Click);
             // 
             // takmicenjaStripBtn
             // 
-            this.takmicenjaStripBtn.Image = ((System.Drawing.Image)(resources.GetObject("takmicenjaStripBtn.Image")));
+            this.takmicenjaStripBtn.Image = global::KarateSavez.Properties.Resources.takmicenja2;
+            this.takmicenjaStripBtn.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.takmicenjaStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.takmicenjaStripBtn.Name = "takmicenjaStripBtn";
-            this.takmicenjaStripBtn.Size = new System.Drawing.Size(91, 23);
+            this.takmicenjaStripBtn.Size = new System.Drawing.Size(141, 93);
             this.takmicenjaStripBtn.Text = "Такмичења";
             this.takmicenjaStripBtn.ToolTipText = "Такмичења";
             this.takmicenjaStripBtn.Click += new System.EventHandler(this.takmicenjaStripBtn_Click);
             // 
             // borbaStripBtn
             // 
-            this.borbaStripBtn.Image = global::KarateSavez.Properties.Resources.help1;
+            this.borbaStripBtn.Image = global::KarateSavez.Properties.Resources.borba2;
+            this.borbaStripBtn.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.borbaStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.borbaStripBtn.Name = "borbaStripBtn";
-            this.borbaStripBtn.Size = new System.Drawing.Size(61, 23);
+            this.borbaStripBtn.Size = new System.Drawing.Size(133, 93);
             this.borbaStripBtn.Text = "Борба";
             this.borbaStripBtn.Click += new System.EventHandler(this.borbaStripBtn_Click);
             // 
             // takmicariStripBtn
             // 
-            this.takmicariStripBtn.Image = global::KarateSavez.Properties.Resources.help;
+            this.takmicariStripBtn.Image = global::KarateSavez.Properties.Resources.takmicar2;
+            this.takmicariStripBtn.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.takmicariStripBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.takmicariStripBtn.Name = "takmicariStripBtn";
-            this.takmicariStripBtn.Size = new System.Drawing.Size(89, 23);
+            this.takmicariStripBtn.Size = new System.Drawing.Size(156, 93);
             this.takmicariStripBtn.Text = "Такмичари";
             this.takmicariStripBtn.Click += new System.EventHandler(this.takmicariStripBtn_Click);
             // 
@@ -251,7 +290,7 @@
             this.toolStripStatusLabel2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 613);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(892, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(942, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -262,11 +301,16 @@
             this.toolStripStatusLabel2.Text = "Аутор: Марко Васић ЕТФБЛ  1113/11";
             this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(282, 6);
+            // 
             // pocetnaForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 635);
+            this.ClientSize = new System.Drawing.Size(942, 635);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -298,22 +342,24 @@
         private System.Windows.Forms.ToolStripButton borbaStripBtn;
         private System.Windows.Forms.ToolStripButton takmicariStripBtn;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.ToolStripMenuItem новиToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem огласToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem такмичарToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem такмичењеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem помоћToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem noviToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oglasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem takmicarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem takmicenjeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pomocToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oAplikacijiToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem оКаратеСавезуToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem упутстоЗаКоришћењеАпликацијеToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem прегледToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem такмичењаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem oKarateSavezuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uputstvoZaKoriscenjeAplikacijeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pregledToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem takmicaraToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem затвориToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem подешавањаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem темаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem додатнаПодешавањаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem такмичењаToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem zatvoriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem podesavanjaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem temaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dodatnaPodesavanjaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem takmicenjaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem oglasaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
 

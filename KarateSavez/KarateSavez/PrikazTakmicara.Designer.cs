@@ -38,12 +38,10 @@ namespace KarateSavez
             this.klubColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pojasColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.datumRodjenjaColHead = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.pretragaTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.pretraziBtn = new System.Windows.Forms.ToolStripButton();
-            this.dbgLabel = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip3 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel5 = new System.Windows.Forms.ToolStripLabel();
             this.klubComboBox = new System.Windows.Forms.ToolStripComboBox();
@@ -62,8 +60,8 @@ namespace KarateSavez
             this.izbrisiBtn = new System.Windows.Forms.ToolStripButton();
             this.prikaziBtn = new System.Windows.Forms.ToolStripButton();
             this.prijaviBtn = new System.Windows.Forms.ToolStripButton();
+            this.odjaviBtn = new System.Windows.Forms.ToolStripButton();
             this.osvjeziBtn = new System.Windows.Forms.ToolStripButton();
-            this.button2 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.toolStrip3.SuspendLayout();
             this.toolStrip2.SuspendLayout();
@@ -73,6 +71,7 @@ namespace KarateSavez
             // 
             // takmicariListView
             // 
+            resources.ApplyResources(this.takmicariListView, "takmicariListView");
             this.takmicariListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.jmbColHead,
             this.imeColHead,
@@ -80,7 +79,6 @@ namespace KarateSavez
             this.klubColHead,
             this.pojasColHead,
             this.datumRodjenjaColHead});
-            resources.ApplyResources(this.takmicariListView, "takmicariListView");
             this.takmicariListView.FullRowSelect = true;
             this.takmicariListView.MultiSelect = false;
             this.takmicariListView.Name = "takmicariListView";
@@ -111,20 +109,12 @@ namespace KarateSavez
             // 
             resources.ApplyResources(this.datumRodjenjaColHead, "datumRodjenjaColHead");
             // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.pretragaTextBox,
-            this.pretraziBtn,
-            this.dbgLabel});
+            this.pretraziBtn});
             resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             // 
@@ -151,11 +141,6 @@ namespace KarateSavez
             resources.ApplyResources(this.pretraziBtn, "pretraziBtn");
             this.pretraziBtn.Name = "pretraziBtn";
             this.pretraziBtn.Click += new System.EventHandler(this.pretraziBtn_Click);
-            // 
-            // dbgLabel
-            // 
-            this.dbgLabel.Name = "dbgLabel";
-            resources.ApplyResources(this.dbgLabel, "dbgLabel");
             // 
             // toolStrip3
             // 
@@ -260,6 +245,7 @@ namespace KarateSavez
             this.izbrisiBtn,
             this.prikaziBtn,
             this.prijaviBtn,
+            this.odjaviBtn,
             this.osvjeziBtn});
             resources.ApplyResources(this.toolStrip5, "toolStrip5");
             this.toolStrip5.Name = "toolStrip5";
@@ -273,23 +259,30 @@ namespace KarateSavez
             // 
             // izbrisiBtn
             // 
-            this.izbrisiBtn.Image = global::KarateSavez.Properties.Resources.help;
+            this.izbrisiBtn.Image = global::KarateSavez.Properties.Resources.brisi;
             resources.ApplyResources(this.izbrisiBtn, "izbrisiBtn");
             this.izbrisiBtn.Name = "izbrisiBtn";
             // 
             // prikaziBtn
             // 
-            this.prikaziBtn.Image = global::KarateSavez.Properties.Resources.open;
+            this.prikaziBtn.Image = global::KarateSavez.Properties.Resources.prikaz;
             resources.ApplyResources(this.prikaziBtn, "prikaziBtn");
             this.prikaziBtn.Name = "prikaziBtn";
             this.prikaziBtn.Click += new System.EventHandler(this.prikaziBtn_Click);
             // 
             // prijaviBtn
             // 
-            this.prijaviBtn.Image = global::KarateSavez.Properties.Resources.help1;
+            this.prijaviBtn.Image = global::KarateSavez.Properties.Resources.prijava;
             resources.ApplyResources(this.prijaviBtn, "prijaviBtn");
             this.prijaviBtn.Name = "prijaviBtn";
             this.prijaviBtn.Click += new System.EventHandler(this.prijaviBtn_Click);
+            // 
+            // odjaviBtn
+            // 
+            this.odjaviBtn.Image = global::KarateSavez.Properties.Resources.odjava;
+            resources.ApplyResources(this.odjaviBtn, "odjaviBtn");
+            this.odjaviBtn.Name = "odjaviBtn";
+            this.odjaviBtn.Click += new System.EventHandler(this.odjaviBtn_Click);
             // 
             // osvjeziBtn
             // 
@@ -298,28 +291,17 @@ namespace KarateSavez
             this.osvjeziBtn.Name = "osvjeziBtn";
             this.osvjeziBtn.Click += new System.EventHandler(this.osvjeziBtn_Click);
             // 
-            // button2
-            // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // PrikazTakmicara
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
-            this.ControlBox = false;
             this.Controls.Add(this.takmicariListView);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.toolStrip5);
             this.Controls.Add(this.toolStrip4);
             this.Controls.Add(this.toolStrip2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.toolStrip3);
             this.Controls.Add(this.toolStrip1);
             this.KeyPreview = true;
-            this.MaximizeBox = false;
             this.Name = "PrikazTakmicara";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -340,7 +322,6 @@ namespace KarateSavez
 
         #endregion
         private System.Windows.Forms.ListView takmicariListView;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripTextBox pretragaTextBox;
@@ -370,7 +351,6 @@ namespace KarateSavez
         private System.Windows.Forms.ColumnHeader klubColHead;
         private System.Windows.Forms.ColumnHeader pojasColHead;
         private System.Windows.Forms.ColumnHeader datumRodjenjaColHead;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ToolStripLabel dbgLabel;
+        private System.Windows.Forms.ToolStripButton odjaviBtn;
     }
 }
